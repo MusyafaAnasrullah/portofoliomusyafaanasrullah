@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_services: "Layanan",
       nav_projects: "Proyek",
       nav_experience: "Pengalaman",
-      nav_fighter: "Fighter",
+      nav_fighter: "Bela Diri",
       nav_achievements: "Prestasi",
       nav_faq: "FAQ",
       nav_community: "Komunitas",
@@ -111,8 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
       f_sched_sub: "Disiplin latihan harian tanpa kompromi:",
       f_comp_title: "Kompetisi & Medali",
       motto_sub: "Rasa takut adalah teman. Rasa takut mengajarkan kita untuk waspada, bersiap, dan bertarung dengan fokus tertinggi.",
-      f_gallery_title: "Galeri Seni Bela Diri",
-      f_gallery_sub: "Klik gambar untuk melihat galeri foto latihan & kejuaraan secara penuh.",
+
 
       ach_subtitle: "PRESTASI & SERTIFIKASI",
       ach_title: "Sertifikat & Penghargaan",
@@ -162,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_services: "Services",
       nav_projects: "Projects",
       nav_experience: "Experience",
-      nav_fighter: "Fighter",
+      nav_fighter: "Martial Arts",
       nav_achievements: "Achievements",
       nav_faq: "FAQ",
       nav_community: "Community",
@@ -262,8 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
       f_sched_sub: "Uncompromising daily workout schedule:",
       f_comp_title: "Competitions & Medals",
       motto_sub: "Fear is a friend. Fear keeps us alert, prepared, and focused at the highest level.",
-      f_gallery_title: "Martial Arts Gallery",
-      f_gallery_sub: "Click any image to open full resolution lightbox gallery.",
+
 
       ach_subtitle: "HONORS & CERTIFICATIONS",
       ach_title: "Certificates & Awards",
@@ -313,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_services: "服务",
       nav_projects: "项目",
       nav_experience: "经验",
-      nav_fighter: "格斗家",
+      nav_fighter: "武术",
       nav_achievements: "成就",
       nav_faq: "常见问题",
       nav_community: "社区",
@@ -409,8 +407,7 @@ document.addEventListener('DOMContentLoaded', () => {
       f_sched_sub: "严格的每日训练计划:",
       f_comp_title: "比赛与奖牌",
       motto_sub: "恐惧是朋友。恐惧使我们时刻保持警惕与专注。",
-      f_gallery_title: "武术画廊",
-      f_gallery_sub: "点击图片查看全屏照片。",
+
 
       ach_subtitle: "荣誉与认证",
       ach_title: "证书与奖项",
@@ -460,7 +457,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_services: "サービス",
       nav_projects: "実績",
       nav_experience: "経験",
-      nav_fighter: "格闘家",
+      nav_fighter: "武道",
       nav_achievements: "実績・資格",
       nav_faq: "FAQ",
       nav_community: "コミュニティ",
@@ -556,8 +553,7 @@ document.addEventListener('DOMContentLoaded', () => {
       f_sched_sub: "妥協のない毎日の練習日課:",
       f_comp_title: "大会実績・メダル",
       motto_sub: "恐怖は友である。恐怖は私たちに高度な集中と警戒を与える。",
-      f_gallery_title: "格闘技ギャラリー",
-      f_gallery_sub: "画像をクリックすると拡大表示されます。",
+
 
       ach_subtitle: "実績と資格",
       ach_title: "資格・受賞歴",
@@ -607,7 +603,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_services: "서비스",
       nav_projects: "프로젝트",
       nav_experience: "경력",
-      nav_fighter: "파이터",
+      nav_fighter: "무술",
       nav_achievements: "성과",
       nav_faq: "FAQ",
       nav_community: "커뮤니티",
@@ -703,8 +699,7 @@ document.addEventListener('DOMContentLoaded', () => {
       f_sched_sub: "타협 없는 매일의 훈련 루틴:",
       f_comp_title: "대회 및 메달",
       motto_sub: "두려움은 친구다. 두려움은 우리를 경계하게 만들고 최상의 집중력을 발휘하게 한다.",
-      f_gallery_title: "무술 갤러리",
-      f_gallery_sub: "이미지를 클릭하면 확대 갤러리가 열립니다.",
+
 
       ach_subtitle: "성과 및 자격",
       ach_title: "자격증 및 수상",
@@ -754,7 +749,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_services: "Servicios",
       nav_projects: "Proyectos",
       nav_experience: "Experiencia",
-      nav_fighter: "Luchador",
+      nav_fighter: "Artes Marciales",
       nav_achievements: "Logros",
       nav_faq: "FAQ",
       nav_community: "Comunidad",
@@ -850,8 +845,7 @@ document.addEventListener('DOMContentLoaded', () => {
       f_sched_sub: "Horario de entrenamiento diario sin compromiso:",
       f_comp_title: "Competencias & Medallas",
       motto_sub: "El miedo es un amigo. El miedo nos mantiene alertas, preparados y enfocados al máximo nivel.",
-      f_gallery_title: "Galería de Artes Marciales",
-      f_gallery_sub: "Haz clic en cualquier imagen para abrir la galería en pantalla completa.",
+
 
       ach_subtitle: "HONORES & CERTIFICACIONES",
       ach_title: "Certificados & Premios",
@@ -901,7 +895,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_services: "Services",
       nav_projects: "Projets",
       nav_experience: "Expérience",
-      nav_fighter: "Combattant",
+      nav_fighter: "Arts Martiaux",
       nav_achievements: "Réalisations",
       nav_faq: "FAQ",
       nav_community: "Communauté",
@@ -997,8 +991,7 @@ document.addEventListener('DOMContentLoaded', () => {
       f_sched_sub: "Programme d'entraînement quotidien sans compromis :",
       f_comp_title: "Compétitions & Médailles",
       motto_sub: "La peur est un ami. La peur nous garde alertes, préparés et concentrés au plus haut niveau.",
-      f_gallery_title: "Galerie d'Arts Martiaux",
-      f_gallery_sub: "Cliquez sur une image pour ouvrir la galerie en plein écran.",
+
 
       ach_subtitle: "HONNEURS & CERTIFICATIONS",
       ach_title: "Certificats & Récompenses",
@@ -1048,7 +1041,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_services: "Dienste",
       nav_projects: "Projekte",
       nav_experience: "Erfahrung",
-      nav_fighter: "Kämpfer",
+      nav_fighter: "Kampfkunst",
       nav_achievements: "Leistungen",
       nav_faq: "FAQ",
       nav_community: "Community",
@@ -1144,8 +1137,7 @@ document.addEventListener('DOMContentLoaded', () => {
       f_sched_sub: "Kompromissloses tägliches Trainingsprogramm:",
       f_comp_title: "Wettkämpfe & Medaillen",
       motto_sub: "Angst ist ein Freund. Angst hält uns wachsam, vorbereitet und auf höchstem Niveau fokussiert.",
-      f_gallery_title: "Kampfkunst-Galerie",
-      f_gallery_sub: "Klicke auf ein Bild, um die Vollbild-Galerie zu öffnen.",
+
 
       ach_subtitle: "AUSZEICHNUNGEN & ZERTIFIZIERUNGEN",
       ach_title: "Zertifikate & Auszeichnungen",
@@ -1195,7 +1187,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_services: "Serviços",
       nav_projects: "Projetos",
       nav_experience: "Experiência",
-      nav_fighter: "Lutador",
+      nav_fighter: "Artes Marciais",
       nav_achievements: "Conquistas",
       nav_faq: "FAQ",
       nav_community: "Comunidade",
@@ -1291,8 +1283,7 @@ document.addEventListener('DOMContentLoaded', () => {
       f_sched_sub: "Programação diária de treino sem compromisso:",
       f_comp_title: "Competições & Medalhas",
       motto_sub: "O medo é um amigo. O medo nos mantém alertas, preparados e focados no mais alto nível.",
-      f_gallery_title: "Galeria de Artes Marciais",
-      f_gallery_sub: "Clique em qualquer imagem para abrir a galeria em tela cheia.",
+
 
       ach_subtitle: "HONRARIAS & CERTIFICAÇÕES",
       ach_title: "Certificados & Prêmios",
@@ -1342,7 +1333,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_services: "الخدمات",
       nav_projects: "المشاريع",
       nav_experience: "الخبرة",
-      nav_fighter: "المقاتل",
+      nav_fighter: "فنون القتال",
       nav_achievements: "الإنجازات",
       nav_faq: "الأسئلة",
       nav_community: "المجتمع",
@@ -1438,8 +1429,7 @@ document.addEventListener('DOMContentLoaded', () => {
       f_sched_sub: "جدول تدريب يومي لا تنازل فيه:",
       f_comp_title: "المسابقات والميداليات",
       motto_sub: "الخوف صديق. الخوف يجعلنا متيقظين، مستعدين، ومركزين على أعلى مستوى.",
-      f_gallery_title: "معرض الفنون القتالية",
-      f_gallery_sub: "انقر فوق أي صورة لفتح معرض الشاشة الكاملة.",
+
 
       ach_subtitle: "الأوسمة والشهادات",
       ach_title: "الشهادات والجوائز",
@@ -1489,7 +1479,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_services: "Servizi",
       nav_projects: "Progetti",
       nav_experience: "Esperienza",
-      nav_fighter: "Combattente",
+      nav_fighter: "Arti Marziali",
       nav_achievements: "Riconoscimenti",
       nav_faq: "FAQ",
       nav_community: "Community",
@@ -1585,8 +1575,7 @@ document.addEventListener('DOMContentLoaded', () => {
       f_sched_sub: "Programma di allenamento giornaliero senza compromessi:",
       f_comp_title: "Competizioni & Medaglie",
       motto_sub: "La paura è un'amica. La paura ci mantiene vigili, preparati e concentrati al massimo livello.",
-      f_gallery_title: "Galleria di Arti Marziali",
-      f_gallery_sub: "Clicca su qualsiasi immagine per aprire la galleria a schermo intero.",
+
 
       ach_subtitle: "ONORIFICENZE & CERTIFICAZIONI",
       ach_title: "Certificati & Premi",
@@ -1636,7 +1625,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_services: "Услуги",
       nav_projects: "Проекты",
       nav_experience: "Опыт",
-      nav_fighter: "Боец",
+      nav_fighter: "Боевые Искусства",
       nav_achievements: "Достижения",
       nav_faq: "FAQ",
       nav_community: "Сообщество",
@@ -1732,8 +1721,7 @@ document.addEventListener('DOMContentLoaded', () => {
       f_sched_sub: "Ежедневный тренировочный график без компромиссов:",
       f_comp_title: "Соревнования & Медали",
       motto_sub: "Страх — это друг. Страх держит нас в боевой готовности, подготовленными и сосредоточенными на высшем уровне.",
-      f_gallery_title: "Галерея Боевых Искусств",
-      f_gallery_sub: "Нажмите на любое изображение, чтобы открыть полноэкранную галерею.",
+
 
       ach_subtitle: "НАГРАДЫ & СЕРТИФИКАЦИИ",
       ach_title: "Сертификаты & Награды",
@@ -1783,7 +1771,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_services: "Hizmetler",
       nav_projects: "Projeler",
       nav_experience: "Deneyim",
-      nav_fighter: "Dövüşçü",
+      nav_fighter: "Dövüş Sanatları",
       nav_achievements: "Başarılar",
       nav_faq: "SSS",
       nav_community: "Topluluk",
@@ -1879,8 +1867,7 @@ document.addEventListener('DOMContentLoaded', () => {
       f_sched_sub: "Uzlaşmasız günlük antrenman programı:",
       f_comp_title: "Yarışmalar & Madalyalar",
       motto_sub: "Korku bir dosttur. Korku bizi uyanık, hazır ve en yüksek düzeyde odaklanmış tutar.",
-      f_gallery_title: "Dövüş Sanatları Galerisi",
-      f_gallery_sub: "Tam ekran galeriyi açmak için herhangi bir resme tıklayın.",
+
 
       ach_subtitle: "ONURLAR & SERTİFİKASYONLAR",
       ach_title: "Sertifikalar & Ödüller",
@@ -1930,7 +1917,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_services: "Diensten",
       nav_projects: "Projecten",
       nav_experience: "Ervaring",
-      nav_fighter: "Vechter",
+      nav_fighter: "Vechtkunst",
       nav_achievements: "Prestaties",
       nav_faq: "FAQ",
       nav_community: "Community",
@@ -2026,8 +2013,7 @@ document.addEventListener('DOMContentLoaded', () => {
       f_sched_sub: "Compromisloos dagelijks trainingsschema:",
       f_comp_title: "Competities & Medailles",
       motto_sub: "Angst is een vriend. Angst houdt ons alert, voorbereid en op het hoogste niveau gefocust.",
-      f_gallery_title: "Vechtsporten Galerij",
-      f_gallery_sub: "Klik op een afbeelding om de volledige galerie te openen.",
+
 
       ach_subtitle: "ONDERSCHEIDINGEN & CERTIFICERINGEN",
       ach_title: "Certificaten & Prijzen",
@@ -2077,7 +2063,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_services: "सेवाएं",
       nav_projects: "परियोजनाएं",
       nav_experience: "अनुभव",
-      nav_fighter: "लड़ाकू",
+      nav_fighter: "मार्शल आर्ट्स",
       nav_achievements: "उपलब्धियां",
       nav_faq: "FAQ",
       nav_community: "समुदाय",
@@ -2173,8 +2159,7 @@ document.addEventListener('DOMContentLoaded', () => {
       f_sched_sub: "बिना समझौते का दैनिक प्रशिक्षण कार्यक्रम:",
       f_comp_title: "प्रतियोगिताएं और पदक",
       motto_sub: "डर एक दोस्त है। डर हमें सतर्क, तैयार और उच्चतम स्तर पर केंद्रित रखता है।",
-      f_gallery_title: "मार्शल आर्ट गैलरी",
-      f_gallery_sub: "पूर्ण स्क्रीन गैलरी खोलने के लिए किसी भी छवि पर क्लिक करें।",
+
 
       ach_subtitle: "सम्मान और प्रमाणन",
       ach_title: "प्रमाण पत्र और पुरस्कार",
@@ -2444,9 +2429,189 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* --- 8. ACHIEVEMENTS FILTER TABS --- */
+  /* --- 8. ACHIEVEMENTS & DOCUMENT SHOWCASE MODALS --- */
+  const documentData = {
+    cert: {
+      title: "Dokumen Sertifikat",
+      subtitle: "Bukti kompetensi dan keahlian yang telah diraih (3 Sertifikat)",
+      icon: "fa-solid fa-file-contract",
+      items: [
+        {
+          title: "Sertifikat Belajar Fullstack Di Eduwork",
+          issuer: "Eduwork Professional Academy",
+          category: "Fullstack Web Development",
+          date: "2024",
+          path: "assets/images/sertifikat/Sertifikat Belajar Fullstack Di Eduwork.pdf",
+          desc: "Sertifikat resmi kelulusan & kompetensi intensif pemrograman Fullstack Web Development (Frontend & Backend)."
+        },
+        {
+          title: "Sertifikat Sekolah Pasar Modal",
+          issuer: "Bursa Efek Indonesia (BEI) & Phintraco Sekuritas",
+          category: "Financial & Capital Market",
+          date: "2024",
+          path: "assets/images/sertifikat/Sertifikat Sekolah Pasar Modal.pdf",
+          desc: "Sertifikat kelulusan edukasi & analisis fundamental serta teknikal investasi pasar modal Indonesia."
+        },
+        {
+          title: "Sertifikat Seminar Entrepreneur",
+          issuer: "Seminar Nasional Kewirausahaan & Teknologi",
+          category: "Technology Leadership & Business",
+          date: "2024",
+          path: "assets/images/sertifikat/Sertifikat Seminar Entrepreneur.pdf",
+          desc: "Sertifikat partisipasi seminar kepemimpinan bisnis, strategi startup digital, dan inovasi teknologi."
+        }
+      ]
+    },
+    piagam: {
+      title: "Dokumen Piagam",
+      subtitle: "Penghargaan atas pencapaian dan kontribusi (1 Piagam)",
+      icon: "fa-solid fa-award",
+      items: [
+        {
+          title: "Piagam Juara 2 Kyorugi",
+          issuer: "Kejuaraan Taekwondo Indonesia",
+          category: "Martial Arts Championship",
+          date: "2025",
+          path: "assets/images/piagam/Piagam Juara 2 Kyorugi.pdf",
+          desc: "Piagam Penghargaan Resmi atas Pencapaian Juara 2 (Medali Perak) Kejuaraan Taekwondo Kategori Kyorugi (Pertarungan)."
+        }
+      ]
+    },
+    medal: {
+      title: "Dokumen Medali",
+      subtitle: "Pencapaian terbaik dalam berbagai kompetisi (1 Medali)",
+      icon: "fa-solid fa-medal",
+      items: [
+        {
+          title: "Medali Perak Pancasila Cup 2",
+          issuer: "Panitia Kejuaraan Nasional Pancasila Cup 2",
+          category: "National Taekwondo Championship",
+          date: "2025",
+          path: "assets/images/medali/Mendali Pancasila Cup 2.pdf",
+          desc: "Sertifikat & Dokumen Resmi Pencapaian Medali Perak (Silver Medalist) Kejuaraan Taekwondo Pancasila Cup 2 Tingkat Nasional."
+        }
+      ]
+    }
+  };
+
+  const docShowcaseModal = document.getElementById('doc-showcase-modal');
+  const docModalClose = document.getElementById('doc-modal-close');
+  const docModalTitle = document.getElementById('doc-modal-title');
+  const docModalSubtitle = document.getElementById('doc-modal-subtitle');
+  const docModalIconContainer = document.getElementById('doc-modal-icon-container');
+  const docModalBody = document.getElementById('doc-modal-body');
+
+  const pdfViewerModal = document.getElementById('pdf-viewer-modal');
+  const pdfViewerClose = document.getElementById('pdf-viewer-close');
+  const pdfViewerTitle = document.getElementById('pdf-viewer-title');
+  const pdfViewerExternal = document.getElementById('pdf-viewer-external');
+  const pdfViewerDownload = document.getElementById('pdf-viewer-download');
+  const pdfViewerContainer = document.getElementById('pdf-viewer-container');
+
+  function openPdfViewer(path, title) {
+    if (!pdfViewerModal) return;
+    const encodedPath = encodeURI(path);
+    if (pdfViewerTitle) pdfViewerTitle.textContent = title;
+    if (pdfViewerExternal) pdfViewerExternal.href = encodedPath;
+    if (pdfViewerDownload) pdfViewerDownload.href = encodedPath;
+
+    if (pdfViewerContainer) {
+      pdfViewerContainer.innerHTML = `
+        <object data="${encodedPath}#toolbar=1&navpanes=0" type="application/pdf" style="width:100%;height:100%;">
+          <iframe src="${encodedPath}#toolbar=1&navpanes=0" style="width:100%;height:100%;border:none;">
+            <div style="padding: 2.5rem; text-align: center; color: var(--text-secondary);">
+              <i class="fa-solid fa-file-pdf fa-4x" style="color: #ef4444; margin-bottom: 1rem;"></i>
+              <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Dokumen PDF Siap Dibuka</h4>
+              <p>Gunakan tombol di bawah untuk membuka atau mengunduh dokumen secara langsung.</p>
+              <div style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="${encodedPath}" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Buka di Tab Baru</a>
+                <a href="${encodedPath}" download class="btn btn-secondary"><i class="fa-solid fa-download"></i> Download PDF</a>
+              </div>
+            </div>
+          </iframe>
+        </object>
+      `;
+    }
+
+    pdfViewerModal.classList.add('active');
+  }
+
+  function closePdfViewer() {
+    if (!pdfViewerModal) return;
+    pdfViewerModal.classList.remove('active');
+    if (pdfViewerContainer) pdfViewerContainer.innerHTML = '';
+  }
+
+  pdfViewerClose?.addEventListener('click', closePdfViewer);
+  pdfViewerModal?.addEventListener('click', (e) => {
+    if (e.target === pdfViewerModal) closePdfViewer();
+  });
+
+  function openDocShowcase(catKey) {
+    const data = documentData[catKey];
+    if (!data || !docShowcaseModal) return;
+
+    docModalTitle.textContent = data.title;
+    docModalSubtitle.textContent = data.subtitle;
+    docModalIconContainer.innerHTML = `<i class="${data.icon}"></i>`;
+
+    docModalBody.innerHTML = data.items.map(item => `
+      <div class="doc-item-card">
+        <div class="doc-item-info">
+          <div class="doc-pdf-icon"><i class="fa-solid fa-file-pdf"></i></div>
+          <div class="doc-item-details">
+            <h5>${item.title}</h5>
+            <div class="doc-item-meta">
+              <span class="doc-meta-badge">${item.category}</span>
+              <span><i class="fa-solid fa-building"></i> ${item.issuer}</span>
+              <span><i class="fa-solid fa-calendar-days"></i> ${item.date}</span>
+            </div>
+            <p class="doc-item-desc">${item.desc}</p>
+          </div>
+        </div>
+        <div class="doc-item-actions">
+          <button class="btn btn-sm btn-primary view-pdf-btn" data-path="${item.path}" data-title="${item.title}">
+            <i class="fa-solid fa-eye"></i> Preview PDF
+          </button>
+          <a href="${item.path}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary" title="Buka di Tab Baru">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Tab Baru
+          </a>
+          <a href="${item.path}" download class="btn btn-sm btn-outline" title="Download Document">
+            <i class="fa-solid fa-download"></i> Download
+          </a>
+        </div>
+      </div>
+    `).join('');
+
+    docModalBody.querySelectorAll('.view-pdf-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const path = btn.getAttribute('data-path');
+        const title = btn.getAttribute('data-title');
+        openPdfViewer(path, title);
+      });
+    });
+
+    docShowcaseModal.classList.add('active');
+  }
+
+  function closeDocShowcase() {
+    if (docShowcaseModal) docShowcaseModal.classList.remove('active');
+  }
+
+  docModalClose?.addEventListener('click', closeDocShowcase);
+  docShowcaseModal?.addEventListener('click', (e) => {
+    if (e.target === docShowcaseModal) closeDocShowcase();
+  });
+
+  document.querySelectorAll('.ach-cat-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const cat = card.getAttribute('data-cat');
+      openDocShowcase(cat);
+    });
+  });
+
   const achTabBtns = document.querySelectorAll('.ach-tab-btn');
-  const achCards = document.querySelectorAll('.ach-card');
+  const achCatCards = document.querySelectorAll('.ach-cat-card');
 
   achTabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -2455,15 +2620,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const tab = btn.getAttribute('data-tab');
 
-      achCards.forEach(card => {
-        const type = card.getAttribute('data-type');
-        if (tab === 'all' || type === tab) {
-          card.classList.remove('hide');
+      achCatCards.forEach(card => {
+        const cat = card.getAttribute('data-cat');
+        if (tab === 'all' || cat === tab) {
+          card.style.display = 'block';
         } else {
-          card.classList.add('hide');
+          card.style.display = 'none';
         }
       });
+
+      if (tab !== 'all' && documentData[tab]) {
+        openDocShowcase(tab);
+      }
     });
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closePdfViewer();
+      closeDocShowcase();
+    }
   });
 
   /* --- 9. FAQ ACCORDION --- */
