@@ -729,9 +729,18 @@ span.ripple {
 .hero-slogan {
   font-size: 1.15rem;
   color: var(--text-secondary);
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   font-style: italic;
   max-width: 600px;
+}
+
+.hero-sub-slogan {
+  font-family: var(--font-mono);
+  font-size: 0.98rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  max-width: 650px;
+  line-height: 1.6;
 }
 
 .hero-cta-group {
@@ -2701,7 +2710,8 @@ a.timeline-address:hover .address-ext-icon {
     text-align: center;
   }
 
-  .hero-slogan {
+  .hero-slogan,
+  .hero-sub-slogan {
     margin-left: auto;
     margin-right: auto;
   }
@@ -2843,6 +2853,10 @@ a.timeline-address:hover .address-ext-icon {
 
   .hero-slogan {
     font-size: 0.95rem;
+  }
+
+  .hero-sub-slogan {
+    font-size: 0.85rem;
   }
 
   .hero-cta-group {

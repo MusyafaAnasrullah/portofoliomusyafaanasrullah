@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       hero_welcome: "Senior Software Engineering",
       hero_greeting: "Halo, Saya",
-      hero_full_slogan: '"Code with Purpose. Fight with Honor. Inspire with Action."',
+      hero_full_slogan: '"Building reliable, scalable, and meaningful digital solutions."',
+      hero_sub_slogan: "Focused on building modern web applications, APIs, and scalable software solutions.",
       btn_download_cv: "Download CV",
       btn_view_projects: "Lihat Proyek",
       btn_contact_me: "Hubungi Saya",
@@ -169,7 +170,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       hero_welcome: "Senior Software Engineering Standard",
       hero_greeting: "Hello, I am",
-      hero_full_slogan: '"Code with Purpose. Fight with Honor. Inspire with Action."',
+      hero_full_slogan: '"Building reliable, scalable, and meaningful digital solutions."',
+      hero_sub_slogan: "Focused on building modern web applications, APIs, and scalable software solutions.",
       btn_download_cv: "Download CV",
       btn_view_projects: "View Projects",
       btn_contact_me: "Contact Me",
@@ -202,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
       vm_vision_desc: "To become a tech professional creating meaningful digital solutions, living disciplined, and inspiring people through knowledge, perseverance, and action.",
       vm_mission_title: "Mission",
       vm_mission_desc: "To develop innovative software solving real-world challenges while inspiring the youth through technology and martial arts.",
-      tagline_trans: "Code with Purpose. Fight with Honor. Inspire with Action.",
+      tagline_trans: "Focused on building modern web applications, APIs, and scalable software solutions.",
 
       journey_subtitle: "LIFE TIMELINE",
       journey_title: "Education & Character Journey",
@@ -319,7 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       hero_welcome: "高级软件工程标准",
       hero_greeting: "你好，我是",
-      hero_full_slogan: '"Code with Purpose. Fight with Honor. Inspire with Action."',
+      hero_full_slogan: '"Building reliable, scalable, and meaningful digital solutions."',
       btn_download_cv: "下载简历 (CV)",
       btn_view_projects: "查看项目",
       btn_contact_me: "联系我",
@@ -465,7 +467,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       hero_welcome: "シニアソフトウェアエンジニア標準",
       hero_greeting: "こんにちは、",
-      hero_full_slogan: '"Code with Purpose. Fight with Honor. Inspire with Action."',
+      hero_full_slogan: '"Building reliable, scalable, and meaningful digital solutions."',
       btn_download_cv: "CVをダウンロード",
       btn_view_projects: "プロジェクトを見る",
       btn_contact_me: "お問い合わせ",
@@ -611,7 +613,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       hero_welcome: "시니어 소프트웨어 엔지니어링 표준",
       hero_greeting: "안녕하세요, 저는",
-      hero_full_slogan: '"Code with Purpose. Fight with Honor. Inspire with Action."',
+      hero_full_slogan: '"Building reliable, scalable, and meaningful digital solutions."',
       btn_download_cv: "이력서 다운로드",
       btn_view_projects: "프로젝트 보기",
       btn_contact_me: "문의하기",
@@ -757,7 +759,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       hero_welcome: "Estándar de Ingeniería de Software Senior",
       hero_greeting: "Hola, soy",
-      hero_full_slogan: '"Code with Purpose. Fight with Honor. Inspire with Action."',
+      hero_full_slogan: '"Building reliable, scalable, and meaningful digital solutions."',
       btn_download_cv: "Descargar CV",
       btn_view_projects: "Ver Proyectos",
       btn_contact_me: "Contáctame",
@@ -903,7 +905,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       hero_welcome: "Standard Ingénierie Logicielle Senior",
       hero_greeting: "Bonjour, je suis",
-      hero_full_slogan: '"Code with Purpose. Fight with Honor. Inspire with Action."',
+      hero_full_slogan: '"Building reliable, scalable, and meaningful digital solutions."',
       btn_download_cv: "Télécharger CV",
       btn_view_projects: "Voir les Projets",
       btn_contact_me: "Me Contacter",
@@ -1049,7 +1051,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       hero_welcome: "Senior Software Engineering Standard",
       hero_greeting: "Hallo, ich bin",
-      hero_full_slogan: '"Code with Purpose. Fight with Honor. Inspire with Action."',
+      hero_full_slogan: '"Building reliable, scalable, and meaningful digital solutions."',
       btn_download_cv: "Lebenslauf herunterladen",
       btn_view_projects: "Projekte ansehen",
       btn_contact_me: "Kontaktiere Mich",
@@ -1195,7 +1197,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       hero_welcome: "Padrão de Engenharia de Software Sênior",
       hero_greeting: "Olá, eu sou",
-      hero_full_slogan: '"Code with Purpose. Fight with Honor. Inspire with Action."',
+      hero_full_slogan: '"Building reliable, scalable, and meaningful digital solutions."',
       btn_download_cv: "Baixar Currículo",
       btn_view_projects: "Ver Projetos",
       btn_contact_me: "Entre em Contato",
@@ -1341,7 +1343,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       hero_welcome: "معيار هندسة البرمجيات الأول",
       hero_greeting: "مرحباً، أنا",
-      hero_full_slogan: '"Code with Purpose. Fight with Honor. Inspire with Action."',
+      hero_full_slogan: '"Building reliable, scalable, and meaningful digital solutions."',
       btn_download_cv: "تحميل السيرة الذاتية",
       btn_view_projects: "عرض المشاريع",
       btn_contact_me: "تواصل معي",
@@ -1487,7 +1489,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       hero_welcome: "Standard Ingegneria del Software Senior",
       hero_greeting: "Ciao, sono",
-      hero_full_slogan: '"Code with Purpose. Fight with Honor. Inspire with Action."',
+      hero_full_slogan: '"Building reliable, scalable, and meaningful digital solutions."',
       btn_download_cv: "Scarica CV",
       btn_view_projects: "Vedi Progetti",
       btn_contact_me: "Contattami",
@@ -1633,7 +1635,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       hero_welcome: "Стандарт Старшего Разработчика ПО",
       hero_greeting: "Привет, я",
-      hero_full_slogan: '"Code with Purpose. Fight with Honor. Inspire with Action."',
+      hero_full_slogan: '"Building reliable, scalable, and meaningful digital solutions."',
       btn_download_cv: "Скачать Резюме",
       btn_view_projects: "Смотреть Проекты",
       btn_contact_me: "Связаться",
@@ -1779,7 +1781,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       hero_welcome: "Kıdemli Yazılım Mühendisliği Standardı",
       hero_greeting: "Merhaba, ben",
-      hero_full_slogan: '"Code with Purpose. Fight with Honor. Inspire with Action."',
+      hero_full_slogan: '"Building reliable, scalable, and meaningful digital solutions."',
       btn_download_cv: "CV İndir",
       btn_view_projects: "Projeleri Gör",
       btn_contact_me: "Bana Ulaş",
@@ -1925,7 +1927,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       hero_welcome: "Senior Software Engineering Standaard",
       hero_greeting: "Hallo, ik ben",
-      hero_full_slogan: '"Code with Purpose. Fight with Honor. Inspire with Action."',
+      hero_full_slogan: '"Building reliable, scalable, and meaningful digital solutions."',
       btn_download_cv: "CV Downloaden",
       btn_view_projects: "Projecten Bekijken",
       btn_contact_me: "Contact Opnemen",
@@ -2071,7 +2073,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       hero_welcome: "वरिष्ठ सॉफ्टवेयर इंजीनियरिंग मानक",
       hero_greeting: "नमस्ते, मैं हूं",
-      hero_full_slogan: '"Code with Purpose. Fight with Honor. Inspire with Action."',
+      hero_full_slogan: '"Building reliable, scalable, and meaningful digital solutions."',
       btn_download_cv: "CV डाउनलोड करें",
       btn_view_projects: "परियोजनाएं देखें",
       btn_contact_me: "संपर्क करें",
