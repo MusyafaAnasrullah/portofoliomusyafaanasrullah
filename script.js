@@ -2435,7 +2435,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const documentData = {
     cert: {
       title: "Dokumen Sertifikat",
-      subtitle: "Bukti kompetensi dan keahlian yang telah diraih (3 Sertifikat)",
+      subtitle: "Bukti kompetensi dan keahlian yang telah diraih (10 Sertifikat)",
       icon: "fa-solid fa-file-contract",
       items: [
         {
@@ -2461,14 +2461,110 @@ document.addEventListener('DOMContentLoaded', () => {
           date: "2024",
           path: "assets/images/sertifikat/Sertifikat Seminar Entrepreneur.pdf",
           desc: "Sertifikat partisipasi seminar kepemimpinan bisnis, strategi startup digital, dan inovasi teknologi."
+        },
+        {
+          title: "Sertifikat Tahfidz Qur'an Juz 29 & 30",
+          issuer: "Lembaga Tahfidz Al-Qur'an",
+          category: "Pendidikan Agama Islam",
+          date: "2023",
+          path: "assets/images/sertifikat/Sertifikat Tahfidz Qur'an Juz 29 & 30.pdf",
+          desc: "Sertifikat resmi hafalan Al-Qur'an Juz 29 dan 30, sebagai bukti pencapaian dalam menghafal dan membaca Al-Qur'an dengan tartil."
+        },
+        {
+          title: "Sertifikat Peserta Dalam Kegiatan Polisi Sahabat Anak (PSA)",
+          issuer: "Kepolisian Republik Indonesia",
+          category: "Pendidikan Karakter & Sosial",
+          date: "2014",
+          path: "assets/images/sertifikat/Sertifikat Peserta Dalam Kegiatan Polisi Sahabat Anak (PSA).pdf",
+          desc: "Sertifikat partisipasi dalam kegiatan Polisi Sahabat Anak (PSA), program pembentukan karakter dan kesadaran hukum sejak dini."
+        },
+        {
+          title: "Sertifikat Peragaan Manasik Haji",
+          issuer: "Lembaga Pendidikan Islam",
+          category: "Pendidikan Agama Islam",
+          date: "2015",
+          path: "assets/images/sertifikat/Sertifikat Peragaan Manasik Haji.pdf",
+          desc: "Sertifikat peserta peragaan manasik haji, sebagai bentuk edukasi praktik ibadah haji bagi generasi muda Muslim."
+        },
+        {
+          title: "Sertifikat Dauroh Qur'an 14 Hari Di Bulan Ramadhan",
+          issuer: "Pesantren Modern Darussalam Gontor",
+          category: "Pendidikan Agama Islam",
+          date: "2022",
+          path: "assets/images/sertifikat/Sertifikat Dauroh Qur'an  14 Hari Di Bulan Ramadhan.pdf",
+          desc: "Sertifikat keikutsertaan program Dauroh Qur'an intensif 14 hari selama bulan Ramadhan, meliputi tilawah, tahsin, dan kajian tafsir."
+        },
+        {
+          title: "Sertifikat Inkai Karate",
+          issuer: "Institut Karate-Do Indonesia (INKAI)",
+          category: "Martial Arts & Bela Diri",
+          date: "2015",
+          path: "assets/images/sertifikat/Sertifikat Inkai Karate.pdf",
+          desc: "Sertifikat resmi tingkat/sabuk dari Institut Karate-Do Indonesia (INKAI), bukti pencapaian dalam seni bela diri Karate."
+        },
+        {
+          title: "Sertifikat Sanggar Lukis Anak",
+          issuer: "Sanggar Seni & Kreativitas Anak",
+          category: "Seni & Kreativitas",
+          date: "2013",
+          path: "assets/images/sertifikat/Sertifikat Sanggar Lukis Anak.pdf",
+          desc: "Sertifikat partisipasi dalam program sanggar lukis anak, mengembangkan kreativitas, ekspresi artistik, dan kemampuan seni rupa."
+        },
+        {
+          title: "Sertifikat Keterangan Lulus Pengabdian",
+          issuer: "Pesantren Modern Darussalam Gontor",
+          category: "Pengabdian & Kepemimpinan",
+          date: "2024",
+          path: "assets/images/sertifikat/Sertifikat Keterangan Lulus Pengabdian.pdf",
+          desc: "Sertifikat keterangan lulus masa pengabdian sebagai pengajar dan pembina santri, bukti dedikasi dalam dunia pendidikan pesantren."
         }
       ]
     },
     piagam: {
-      title: "Dokumen Piagam",
-      subtitle: "Penghargaan atas pencapaian dan kontribusi (1 Piagam)",
+      title: "Dokumen Piagam & Penghargaan",
+      subtitle: "Penghargaan atas pencapaian dan kontribusi (6 Piagam)",
       icon: "fa-solid fa-award",
       items: [
+        {
+          title: "Piagam Penghargaan Juara 2 Kyorugi Senior Putra U 61 kg",
+          issuer: "Kejuaraan Taekwondo Indonesia",
+          category: "Martial Arts Championship",
+          date: "2025",
+          path: "assets/images/piagam/Piagam Penghargaan Juara 2 Kyorugi Senior Putra U 61 kg.pdf",
+          desc: "Piagam Penghargaan Resmi atas Pencapaian Juara 2 (Medali Perak) Kejuaraan Taekwondo Kategori Kyorugi Senior Putra Kelas U 61 kg."
+        },
+        {
+          title: "Piagam Penghargaan Kejuaraan Karate",
+          issuer: "Pengurus Cabang INKAI / Penyelenggara Kejuaraan",
+          category: "Martial Arts Championship",
+          date: "2014",
+          path: "assets/images/piagam/Piagam Penghargaan Kejuaraan Karate.pdf",
+          desc: "Piagam penghargaan atas prestasi dan pencapaian dalam kejuaraan karate, sebagai bukti dedikasi dalam seni bela diri."
+        },
+        {
+          title: "Piagam Penghargaan Peserta Dalam Olahraga Dan Seni",
+          issuer: "Panitia Penyelenggara Olahraga & Seni",
+          category: "Olahraga & Seni",
+          date: "2014",
+          path: "assets/images/piagam/Piagam Penghargaan Peserta Dalam Olahraga Dan Seni.pdf",
+          desc: "Piagam penghargaan atas partisipasi aktif dalam kegiatan olahraga dan seni, menunjukkan semangat sportivitas dan kreativitas."
+        },
+        {
+          title: "Piagam Penghargaan Peserta Lomba Mewarnai",
+          issuer: "Panitia Lomba Mewarnai",
+          category: "Seni & Kreativitas",
+          date: "2013",
+          path: "assets/images/piagam/Piagam Penghargaan Peserta Lomba Mewarnai.pdf",
+          desc: "Piagam penghargaan atas keikutsertaan dalam lomba mewarnai, mengekspresikan kreativitas dan bakat seni sejak usia dini."
+        },
+        {
+          title: "Piagam Penghargaan Dauroh Qur'an 40 Hari 30 Juz & Terjemahnya",
+          issuer: "Pesantren Modern Darussalam Gontor",
+          category: "Pendidikan Agama Islam",
+          date: "2022",
+          path: "assets/images/piagam/Piagam Penghargaan Dauroh Qur'an 40 HAri 30 Juz & Terjemahnya.pdf",
+          desc: "Piagam penghargaan atas keberhasilan menyelesaikan program Dauroh Qur'an intensif 40 hari, mencakup 30 Juz beserta terjemahannya."
+        },
         {
           title: "Piagam Juara 2 Kyorugi",
           issuer: "Kejuaraan Taekwondo Indonesia",
