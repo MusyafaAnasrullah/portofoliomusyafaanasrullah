@@ -3048,8 +3048,8 @@ document.addEventListener('DOMContentLoaded', () => {
       status: "In Progress",
       year: "2026",
       tech: ["React", "Node.js", "MongoDB", "Framer Motion"],
-      liveUrl: "https://github.com/MusyafaAnasrullah/musyafaanasrullah",
-      repoUrl: "https://github.com/MusyafaAnasrullah/musyafaanasrullah",
+      liveUrl: "https://musyafaanasrullah.github.io/portofoliomusyafaanasrullahsoftwareenginering/",
+      repoUrl: "https://github.com/MusyafaAnasrullah/portofoliomusyafaanasrullahsoftwareenginering",
       body: "Platform showcase proyek rekayasa perangkat lunak yang komprehensif. Menampilkan galeri proyek interaktif dengan filter kategori dinamis, animasi transisi halus menggunakan Framer Motion, dan tampilan detail proyek berbasis modal dengan gambar preview dan tech stack badge.",
       features: [
         "Galeri proyek interaktif dengan filter kategori",
