@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Musyafa Anasrullah | Senior Software Engineer • Fighter • Content Creator</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+  
+  <meta name="description" content="Portofolio Musyafa Anasrullah - Senior Software Engineer, Fighter, & Content Creator. Membangun solusi digital yang andal, terukur, dan bermakna." />
+  <meta name="keywords" content="Musyafa Anasrullah, Software Engineer, Web Developer, Fullstack, Taekwondo, Muay Thai, Content Creator, Indonesia" />
+  <meta name="author" content="Musyafa Anasrullah" />
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Musyafa Anasrullah | Portfolio" />
+  <meta property="og:description" content="Membangun solusi digital yang andal, terukur, dan bermakna." />
+  <meta property="og:type" content="website" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Canvas for Cyber Blue Particle Glow Background -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Notification Toast Container -->
+  <div id="toast-container"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active" data-i18n="nav_home">Home</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">About</a>
+        <a href="#journey" class="nav-link" data-i18n="nav_journey">Journey</a>
+        <a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a>
+        <a href="#services" class="nav-link" data-i18n="nav_services">Services</a>
+        <a href="#projects" class="nav-link" data-i18n="nav_projects">Projects</a>
+        <a href="#experience" class="nav-link" data-i18n="nav_experience">Experience</a>
+        <a href="#fighter" class="nav-link" data-i18n="nav_fighter">Bela Diri</a>
+        <a href="#achievements" class="nav-link" data-i18n="nav_achievements">Achievements</a>
+        <a href="#faq" class="nav-link" data-i18n="nav_faq">FAQ</a>
+        <a href="#community" class="nav-link" data-i18n="nav_community">Community</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <!-- Right Controls: Language Selector & Theme Toggle -->
+      <div class="nav-controls">
+        <div class="lang-selector-wrapper">
+          <i class="fa-solid fa-globe lang-icon"></i>
+          <select id="lang-select" class="lang-select" aria-label="Select Language">
+            <option value="id">🇮🇩 ID — Indonesia</option>
+            <option value="en">🇬🇧 EN — English</option>
+            <option value="zh">🇨🇳 ZH — 中文</option>
+            <option value="ja">🇯🇵 JA — 日本語</option>
+            <option value="ko">🇰🇷 KO — 한국어</option>
+            <option value="es">🇪🇸 ES — Español</option>
+            <option value="fr">🇫🇷 FR — Français</option>
+            <option value="de">🇩🇪 DE — Deutsch</option>
+            <option value="pt">🇧🇷 PT — Português</option>
+            <option value="ar">🇸🇦 AR — العربية</option>
+            <option value="it">🇮🇹 IT — Italiano</option>
+            <option value="ru">🇷🇺 RU — Русский</option>
+            <option value="tr">🇹🇷 TR — Türkçe</option>
+            <option value="nl">🇳🇱 NL — Nederlands</option>
+            <option value="hi">🇮🇳 HI — हिन्दी</option>
+          </select>
+        </div>
+
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="hamburger" class="hamburger" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Overlay Menu -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <div class="drawer-header">
+        <div class="drawer-brand">
+          <div class="brand-text">
+            <span class="brand-name">Musyafa Anasrullah</span>
+            <span class="status-badge"><span class="status-dot"></span> <span data-i18n="nav_status">Available for Hire</span></span>
+          </div>
+        </div>
+        <button id="drawer-close" class="drawer-close" aria-label="Close Navigation Menu"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="drawer-links">
+        <a href="#home" class="drawer-link" data-i18n="nav_home">Home</a>
+        <a href="#about" class="drawer-link" data-i18n="nav_about">About</a>
+        <a href="#journey" class="drawer-link" data-i18n="nav_journey">Journey</a>
+        <a href="#skills" class="drawer-link" data-i18n="nav_skills">Skills</a>
+        <a href="#services" class="drawer-link" data-i18n="nav_services">Services</a>
+        <a href="#projects" class="drawer-link" data-i18n="nav_projects">Projects</a>
+        <a href="#experience" class="drawer-link" data-i18n="nav_experience">Experience</a>
+        <a href="#fighter" class="drawer-link" data-i18n="nav_fighter">Bela Diri</a>
+        <a href="#achievements" class="drawer-link" data-i18n="nav_achievements">Achievements</a>
+        <a href="#faq" class="drawer-link" data-i18n="nav_faq">FAQ</a>
+        <a href="#community" class="drawer-link" data-i18n="nav_community">Community</a>
+        <a href="#contact" class="drawer-link" data-i18n="nav_contact">Contact</a>
+      </div>
+      <div class="drawer-footer">
+        <p class="drawer-quote">"Building reliable, scalable, and meaningful digital solutions."</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+
+
+          <h1 class="hero-title">
+            <span class="greeting" data-i18n="hero_greeting">Halo, Saya</span><br />
+            <span class="highlight-name">Musyafa Anasrullah</span>
+          </h1>
+
+          <div class="hero-typing-box">
+            <span class="role-prefix">&lt;/&gt; </span>
+            <span id="typing-text" class="typing-text"></span><span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-slogan" data-i18n="hero_full_slogan">
+            "Membangun solusi digital yang andal, terukur, dan bermakna."
+          </p>
+          <p class="hero-sub-slogan" data-i18n="hero_sub_slogan">
+            Berfokus pada pengembangan aplikasi web modern, API, dan solusi perangkat lunak yang terukur.
+          </p>
+
+          
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="https://drive.google.com/drive/folders/1x9hya4HQTaaa3BTgvWxlm0vFA2rAvCHT?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <i class="fa-solid fa-file-arrow-down"></i> <span data-i18n="btn_download_cv">Download CV</span>
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <i class="fa-solid fa-cubes"></i> <span data-i18n="btn_view_projects">Lihat Proyek</span>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-paper-plane"></i> <span data-i18n="btn_contact_me">Hubungi Saya</span>
+            </a>
+          </div>
+
+          <!-- Social Links Bar -->
+          <div class="social-bar">
+            <a href="https://github.com/MusyafaAnasrullah/musyafaanasrullah" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/musyafa-anasrullah-674368309/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/musyafaanasrullahh/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@musyafaanasrullah" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@musyafaanasrullah00" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+            <a href="mailto:musyafaanasrullah4@gmail.com" aria-label="Email" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://wa.me/628139707965" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Hero Avatar Visual Container -->
+        <div class="hero-visual">
+          <div class="avatar-card">
+            <div class="avatar-glow-ring"></div>
+            <div class="avatar-frame">
+              <img src="assets/images/foto profil/foto profil 1.jpg" alt="Musyafa Anasrullah Profile" class="avatar-img" />
+            </div>
+
+            <!-- Floating Badge Card 1 -->
+            <div class="floating-badge badge-top-right">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>
+                <strong>Martial Artist</strong>
+                <span>Taekwondo & Muay Thai</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge Card 2 -->
+            <div class="floating-badge badge-bottom-left">
+              <i class="fa-solid fa-laptop-code"></i>
+              <div>
+                <strong>Full Stack Dev</strong>
+                <span>React • Node • Laravel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Stats Counter Grid -->
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-code-commit"></i></div>
+            <div class="stat-number" data-target="20">0<span>+</span></div>
+            <div class="stat-label" data-i18n="stat_projects">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="stat-number" data-target="26">0<span>+</span></div>
+            <div class="stat-label" data-i18n="stat_certificates">Certificates</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="stat-number" data-target="5">0<span>+</span></div>
+            <div class="stat-label" data-i18n="stat_years">Years Learning</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-brands fa-github-alt"></i></div>
+            <div class="stat-number" data-target="100">0<span>+</span></div>
+            <div class="stat-label" data-i18n="stat_contrib">GitHub Contributions</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About">
+        <div class="mouse-icon">
+          <div class="wheel"></div>
+        </div>
+        <i class="fa-solid fa-chevron-down arrow-down"></i>
+      </a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" data-i18n="about_subtitle">TENTANG SAYA</span>
+          <h2 class="section-title" data-i18n="about_title">Bio, Visi, Misi & Values</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Personal Biodata Card -->
+          <div class="biodata-card glass-panel">
+            <h3 class="biodata-title"><i class="fa-solid fa-id-card"></i> <span data-i18n="biodata_header">Biodata Diri</span></h3>
+            <ul class="biodata-list">
+              <li>
+                <i class="fa-solid fa-user"></i>
+                <div>
+                  <span class="bio-label" data-i18n="bio_name_lbl">Nama Lengkap</span>
+                  <span class="bio-val">Musyafa Anasrullah</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-cake-candles"></i>
+                <div>
+                  <span class="bio-label" data-i18n="bio_age_lbl">Umur</span>
+                  <span class="bio-val" data-i18n="bio_age_val">22 Tahun</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <span class="bio-label" data-i18n="bio_loc_lbl">Domisili</span>
+                  <span class="bio-val" data-i18n="bio_loc_val">Bogor, Jawa Barat</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-university"></i>
+                <div>
+                  <span class="bio-label" data-i18n="bio_univ_lbl">Perguruan Tinggi</span>
+                  <span class="bio-val">Universitas Bina Sarana Informatika (UBSI Margonda Depok)</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-book-bookmark"></i>
+                <div>
+                  <span class="bio-label" data-i18n="bio_major_lbl">Jurusan</span>
+                  <span class="bio-val" data-i18n="bio_major_val">Rekayasa Perangkat Lunak</span>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Core Values Badges -->
+            <div class="core-values-box">
+              <h4 data-i18n="values_title">Core Values</h4>
+              <div class="values-tags">
+                <span class="value-tag"><i class="fa-solid fa-fire-burner"></i> Discipline</span>
+                <span class="value-tag"><i class="fa-solid fa-clock-rotate-left"></i> Consistency</span>
+                <span class="value-tag"><i class="fa-solid fa-shield-heart"></i> Integrity</span>
+                <span class="value-tag"><i class="fa-solid fa-brain"></i> Continuous Learning</span>
+                <span class="value-tag"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
+                <span class="value-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Innovation</span>
+                <span class="value-tag"><i class="fa-solid fa-people-group"></i> Collaboration</span>
+                <span class="value-tag"><i class="fa-solid fa-award"></i> Excellence</span>
+                <span class="value-tag"><i class="fa-solid fa-key"></i> Ownership</span>
+                <span class="value-tag"><i class="fa-solid fa-gears"></i> Critical Thinking</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Story & Philosophy -->
+          <div class="story-panel glass-panel">
+            <h3 class="story-title"><i class="fa-solid fa-compass"></i> <span data-i18n="about_story_header">Perjalanan & Filosofi Hidup</span></h3>
+            
+            <div class="story-content" data-i18n="about_story_p1">
+              Halo, saya <strong>Musyafa Anasrullah</strong>. Saya adalah seorang mahasiswa Software Engineering, Fighter, dan Content Creator yang memiliki semangat untuk membangun teknologi yang bermanfaat, menjalani hidup dengan disiplin, serta menginspirasi orang lain untuk terus berkembang.
+            </div>
+
+            <div class="story-content" data-i18n="about_story_p2">
+              Perjalanan saya dibentuk oleh tiga dunia yang saling melengkapi. Sebagai mahasiswa Software Engineering, saya berfokus pada pengembangan aplikasi dan solusi digital yang modern, efisien, dan berorientasi pada kebutuhan pengguna. Saya terus mempelajari berbagai teknologi terbaru, mulai dari pengembangan frontend, backend, database, hingga software architecture. Bagi saya, teknologi bukan sekadar tentang menulis kode, tetapi tentang menciptakan solusi yang mampu memberikan dampak nyata bagi banyak orang.
+            </div>
+
+            <div class="story-content" data-i18n="about_story_p3">
+              Di luar dunia teknologi, saya aktif berlatih Taekwondo, Muay Thai, dan Kickboxing. Bela diri mengajarkan saya bahwa kesuksesan dibangun melalui disiplin, konsistensi, ketangguhan mental, serta keberanian untuk menghadapi tantangan. Nilai-nilai tersebut saya terapkan tidak hanya saat berlatih, tetapi juga dalam proses belajar, bekerja, dan menjalani kehidupan sehari-hari.
+            </div>
+
+            <div class="story-content" data-i18n="about_story_p4">
+              Sebagai seorang Content Creator, saya senang mendokumentasikan perjalanan belajar, berbagi pengetahuan, serta menyampaikan konten seputar teknologi, pengembangan diri, dan produktivitas. Saya percaya bahwa ilmu akan menjadi lebih bermakna ketika dibagikan dan mampu memberikan manfaat bagi orang lain.
+            </div>
+
+            <!-- Vision & Mission Grid -->
+            <div class="vision-mission-grid">
+              <div class="vm-card">
+                <div class="vm-icon"><i class="fa-solid fa-eye"></i></div>
+                <h4 data-i18n="vm_vision_title">Vision</h4>
+                <p data-i18n="vm_vision_desc">Menjadi seorang profesional di bidang teknologi yang menciptakan solusi digital yang bermakna, menjalani hidup dengan disiplin, serta menginspirasi banyak orang untuk terus berkembang melalui ilmu pengetahuan, ketekunan, dan tindakan positif.</p>
+              </div>
+              <div class="vm-card">
+                <div class="vm-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <h4 data-i18n="vm_mission_title">Mission</h4>
+                <p data-i18n="vm_mission_desc">Mengembangkan perangkat lunak yang inovatif dan memberikan solusi nyata bagi masyarakat, serta menginspirasi generasi muda melalui karya dan seni bela diri.</p>
+              </div>
+            </div>
+
+            <!-- Tagline Highlight Banner -->
+            <div class="tagline-banner">
+              <div class="tagline-quote">
+                "Building reliable, scalable, and meaningful digital solutions."
+              </div>
+              <p class="tagline-sub" data-i18n="tagline_trans">
+                Focused on building modern web applications, APIs, and scalable software solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY SECTION (TIMELINE) -->
+    <section id="journey" class="section journey-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" data-i18n="journey_subtitle">TIMELINE HIDUP</span>
+          <h2 class="section-title" data-i18n="journey_title">Perjalanan Pendidikan & Karakter</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <!-- Timeline Item 0 (RA Nurul Abror) -->
+          <div class="timeline-item left-item">
+            <div class="timeline-dot"><i class="fa-solid fa-shapes"></i></div>
+            <div class="timeline-content glass-panel">
+              <span class="timeline-year">2007 – 2009</span>
+              <h3>RA Nurul Abror Cibinong</h3>
+              <p data-i18n="journey_item0_desc">Mengawali perjalanan pendidikan dengan membangun fondasi karakter, kedisiplinan, rasa ingin tahu, dan semangat belajar yang menjadi bekal untuk perkembangan akademik dan pribadi di masa depan.</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=RA+Nurul+Abror+Jl.+Nurul+Abror+No.+28+Kelurahan+Tengah+Cibinong+Bogor" target="_blank" rel="noopener noreferrer" class="timeline-address" title="Buka Lokasi di Google Maps">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Jl. Nurul Abror No. 28, Kelurahan Tengah, Kecamatan Cibinong, Kabupaten Bogor, Jawa Barat 16914</span>
+                <i class="fa-solid fa-arrow-up-right-from-square address-ext-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Timeline Item 1a (SDN Pakansari 01) -->
+          <div class="timeline-item right-item">
+            <div class="timeline-dot"><i class="fa-solid fa-book-open-reader"></i></div>
+            <div class="timeline-content glass-panel">
+              <span class="timeline-year">2010 – 2011</span>
+              <h3>SDN Pakansari 01</h3>
+              <p data-i18n="journey_item1a_desc">Mengawali pendidikan dasar dengan mengembangkan kemampuan membaca, menulis, berhitung, serta membangun karakter dan semangat belajar sejak dini.</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=SDN+Pakansari+01+Cibinong+Bogor" target="_blank" rel="noopener noreferrer" class="timeline-address" title="Buka Lokasi di Google Maps">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Jl. Kol. Edy Yoso Martadipura, Pakansari, Kecamatan Cibinong, Kabupaten Bogor, Jawa Barat 16915</span>
+                <i class="fa-solid fa-arrow-up-right-from-square address-ext-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Timeline Item 1 (SDIT Amalia) -->
+          <div class="timeline-item left-item">
+            <div class="timeline-dot"><i class="fa-solid fa-school"></i></div>
+            <div class="timeline-content glass-panel">
+              <span class="timeline-year">2011 – 2016</span>
+              <h3>SDIT Amalia Cibinong</h3>
+              <p data-i18n="journey_item1_desc">Melanjutkan pendidikan dasar di SDIT Amalia Cibinong (kelas 2 - 6 SD). Tempat mengenal kedisiplinan dan latihan Karate selama 5 tahun.</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=SDIT+Amalia+Cibinong+Bogor" target="_blank" rel="noopener noreferrer" class="timeline-address" title="Buka Lokasi di Google Maps">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Jl. KH. Syamsuri, Kelurahan Pakansari, Kecamatan Cibinong, Kabupaten Bogor, Jawa Barat 16915</span>
+                <i class="fa-solid fa-arrow-up-right-from-square address-ext-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 (PMDG Gontor 1) -->
+          <div class="timeline-item right-item">
+            <div class="timeline-dot"><i class="fa-solid fa-kaaba"></i></div>
+            <div class="timeline-content glass-panel">
+              <span class="timeline-year">2016 – 2023</span>
+              <h3>Pondok Modern Darussalam Gontor 1 Ponorogo</h3>
+              <p data-i18n="journey_item2_desc">Mengecap pendidikan pesantren modern di Gontor 1 Ponorogo. Membentuk kepemimpinan, kedisiplinan tinggi, penguasaan bahasa (Arab & Inggris yang utama), serta latihan mendalam Muay Thai selama 3 tahun (kelas 4-6 KMI).</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=Pondok+Modern+Darussalam+Gontor+1+Ponorogo" target="_blank" rel="noopener noreferrer" class="timeline-address" title="Buka Lokasi di Google Maps">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Desa Gontor, Kecamatan Mlarak, Kabupaten Ponorogo, Jawa Timur 63472, Indonesia</span>
+                <i class="fa-solid fa-arrow-up-right-from-square address-ext-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 (An-Nibras Subang) -->
+          <div class="timeline-item left-item">
+            <div class="timeline-dot"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <div class="timeline-content glass-panel">
+              <span class="timeline-year">2023 – 2024</span>
+              <h3>Pengabdian di Pondok An-Nibras Subang</h3>
+              <p data-i18n="journey_item3_desc">Melaksanakan pengabdian sebagai pengajar selama 1 tahun di Pondok An-Nibras Subang, Jawa Barat, bertugas sebagai guru bahasa (Bahasa Arab & Inggris) dan pembina santri.</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=Pondok+An-Nibras+Cirangkong+Subang" target="_blank" rel="noopener noreferrer" class="timeline-address" title="Buka Lokasi di Google Maps">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Jl. Raya Lempar–Cirangkong No. KM 8, Desa Cirangkong, Kecamatan Cijambe, Kabupaten Subang, Jawa Barat 41286, Indonesia</span>
+                <i class="fa-solid fa-arrow-up-right-from-square address-ext-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 (Universitas BSI) -->
+          <div class="timeline-item right-item">
+            <div class="timeline-dot"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="timeline-content glass-panel">
+              <span class="timeline-year">2025 – Sekarang</span>
+              <h3>Universitas BSI Margonda Depok</h3>
+              <p data-i18n="journey_item4_desc">Menempuh studi Rekayasa Perangkat Lunak (Software Engineering) di Universitas BSI, aktif dalam Himpunan Mahasiswa Rekayasa Perangkat Lunak sebagai Sekretaris dan Unit Kegiatan Mahasiswa Taekwondo sebagai Sekretaris.</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=Universitas+BSI+Kampus+Margonda+Depok" target="_blank" rel="noopener noreferrer" class="timeline-address" title="Buka Lokasi di Google Maps">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Kampus Margonda A, Depok</span>
+                <i class="fa-solid fa-arrow-up-right-from-square address-ext-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" data-i18n="skills_subtitle">KEAHLIAN TEKNIS</span>
+          <h2 class="section-title" data-i18n="skills_title">Skills & Tech Stack</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-card glass-panel">
+            <div class="skill-header">
+              <i class="fa-solid fa-desktop skill-icon"></i>
+              <h3>Frontend Development</h3>
+            </div>
+            <div class="skill-items">
+              <div class="tech-badge"><i class="fa-brands fa-js text-yellow"></i> JavaScript</div>
+              <div class="tech-badge"><i class="fa-solid fa-code text-blue"></i> TypeScript</div>
+              <div class="tech-badge"><i class="fa-brands fa-react text-sky"></i> React</div>
+              <div class="tech-badge"><i class="fa-solid fa-n text-white"></i> Next.js</div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-card glass-panel">
+            <div class="skill-header">
+              <i class="fa-solid fa-server skill-icon"></i>
+              <h3>Backend Development</h3>
+            </div>
+            <div class="skill-items">
+              <div class="tech-badge"><i class="fa-brands fa-node-js text-green"></i> Node.js</div>
+              <div class="tech-badge"><i class="fa-solid fa-network-wired text-light"></i> Express.js</div>
+              <div class="tech-badge"><i class="fa-solid fa-diagram-project text-pink"></i> GraphQL</div>
+              <div class="tech-badge"><i class="fa-solid fa-plug text-teal"></i> REST APIs</div>
+            </div>
+          </div>
+
+          <!-- Data & Storage -->
+          <div class="skill-card glass-panel">
+            <div class="skill-header">
+              <i class="fa-solid fa-database skill-icon"></i>
+              <h3>Data &amp; Storage</h3>
+            </div>
+            <div class="skill-items">
+              <div class="tech-badge"><i class="fa-solid fa-elephant text-indigo"></i> PostgreSQL</div>
+              <div class="tech-badge"><i class="fa-solid fa-leaf text-emerald"></i> MongoDB</div>
+              <div class="tech-badge"><i class="fa-solid fa-bolt text-red"></i> Redis</div>
+              <div class="tech-badge"><i class="fa-solid fa-database text-blue"></i> MySQL</div>
+              <div class="tech-badge"><i class="fa-solid fa-server text-cyan"></i> ScyllaDB</div>
+            </div>
+          </div>
+
+          <!-- Tooling & Infra -->
+          <div class="skill-card glass-panel">
+            <div class="skill-header">
+              <i class="fa-solid fa-gears skill-icon"></i>
+              <h3>Tooling &amp; Infra</h3>
+            </div>
+            <div class="skill-items">
+              <div class="tech-badge"><i class="fa-brands fa-docker text-sky"></i> Docker</div>
+              <div class="tech-badge"><i class="fa-solid fa-arrows-spin text-green"></i> CI/CD</div>
+              <div class="tech-badge"><i class="fa-solid fa-triangle text-white"></i> Vercel</div>
+              <div class="tech-badge"><i class="fa-brands fa-aws text-amber"></i> AWS</div>
+            </div>
+          </div>
+
+          <!-- Testing & QA -->
+          <div class="skill-card glass-panel">
+            <div class="skill-header">
+              <i class="fa-solid fa-flask skill-icon"></i>
+              <h3>Testing &amp; Quality Assurance</h3>
+            </div>
+            <div class="skill-items">
+              <div class="tech-badge"><i class="fa-solid fa-vial text-green"></i> Unit Testing</div>
+              <div class="tech-badge"><i class="fa-solid fa-vials text-blue"></i> Integration Testing</div>
+              <div class="tech-badge"><i class="fa-solid fa-plug-circle-check text-purple"></i> API Testing</div>
+              <div class="tech-badge"><i class="fa-solid fa-j text-yellow"></i> Jest</div>
+              <div class="tech-badge"><i class="fa-solid fa-paper-plane text-orange"></i> Postman</div>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-card glass-panel">
+            <div class="skill-header">
+              <i class="fa-solid fa-user-gear skill-icon"></i>
+              <h3>Soft Skills</h3>
+            </div>
+            <div class="skill-items">
+              <div class="tech-badge"><i class="fa-solid fa-people-roof text-blue"></i> Leadership</div>
+              <div class="tech-badge"><i class="fa-solid fa-handshake text-emerald"></i> Teamwork</div>
+              <div class="tech-badge"><i class="fa-solid fa-microphone text-amber"></i> Public Speaking</div>
+              <div class="tech-badge"><i class="fa-solid fa-puzzle-piece text-rose"></i> Problem Solving</div>
+              <div class="tech-badge"><i class="fa-solid fa-stopwatch text-indigo"></i> Time Management</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" data-i18n="services_subtitle">LAYANAN PROFESIONAL</span>
+          <h2 class="section-title" data-i18n="services_title">Services I Offer</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card glass-panel">
+            <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+            <h3 data-i18n="svc1_title">Website Development</h3>
+            <p data-i18n="svc1_desc">Pengembangan aplikasi web modern fullstack yang responsif, cepat, aman, dan dapat disesuaikan dengan kebutuhan bisnis skala besar maupun UMKM.</p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card glass-panel">
+            <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+            <h3 data-i18n="svc2_title">UI/UX Implementation</h3>
+            <p data-i18n="svc2_desc">Mengubah desain Figma menjadi kode frontend yang presisi pixel-perfect, interaktif, dengan animasi halus dan pengalaman pengguna yang luar biasa.</p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card glass-panel">
+            <div class="service-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+            <h3 data-i18n="svc3_title">REST API Development</h3>
+            <p data-i18n="svc3_desc">Membangun arsitektur backend RESTful API yang kuat, aman dengan otentikasi JWT/OAuth, terintegrasi dengan database dan siap diskalakan.</p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card glass-panel">
+            <div class="service-icon"><i class="fa-solid fa-bug-slash"></i></div>
+            <h3 data-i18n="svc4_title">Bug Fixing & Optimization</h3>
+            <p data-i18n="svc4_desc">Menganalisis, memperbaiki bug aplikasi, melakukan refactoring kode, serta mengoptimalkan performa kecepatan sistem agar berjalan efisien.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" data-i18n="projects_subtitle">PORTOFOLIO KARYA</span>
+          <h2 class="section-title" data-i18n="projects_title">Featured Projects</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Project Category Filters -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
+          <button class="filter-btn" data-filter="web" data-i18n="filter_web">Web Development</button>
+          <button class="filter-btn" data-filter="mobile" data-i18n="filter_mobile">Mobile</button>
+          <button class="filter-btn" data-filter="ui" data-i18n="filter_ui">UI Design</button>
+          <button class="filter-btn" data-filter="api" data-i18n="filter_api">API</button>
+          <button class="filter-btn" data-filter="dashboard" data-i18n="filter_dashboard">Dashboard</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid">
+
+          <!-- Project 1: Personal Portfolio -->
+          <div class="project-card glass-panel" data-category="web ui">
+            <div class="project-thumb">
+              <img src="assets/images/background project/Personal Portofolio.png" alt="Personal Portfolio Preview" class="project-thumb-img" />
+              <span class="project-year">2026</span>
+              <div class="project-badge status-live">Live</div>
+            </div>
+            <div class="project-body">
+              <span class="project-cat">Web Development • UI Design</span>
+              <h3>Personal Portfolio</h3>
+              <p data-i18n="p1_desc">Situs portofolio personal profesional dengan mode gelap/terang, animasi partikel interaktif, multi-bahasa (i18n), dan desain responsif premium.</p>
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>i18n</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/MusyafaAnasrullah/portofoliomusyafaanasrullah" target="_blank" rel="noopener noreferrer" class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+                <button type="button" class="proj-link demo-trigger" data-proj="p1"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Portfolio Software Engineering -->
+          <div class="project-card glass-panel" data-category="web dashboard">
+            <div class="project-thumb">
+              <div class="thumb-placeholder thumb-gradient-2">
+                <i class="fa-solid fa-code project-placeholder-icon"></i>
+                <span class="project-year">2026</span>
+              </div>
+              <div class="project-badge status-progress">In Progress</div>
+            </div>
+            <div class="project-body">
+              <span class="project-cat">Web Development • Dashboard</span>
+              <h3>Portfolio Software Engineering</h3>
+              <p data-i18n="p2_desc">Platform showcase proyek rekayasa perangkat lunak lengkap dengan galeri interaktif, filter kategori dinamis, dan tampilan detail proyek berbasis modal.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Framer Motion</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/MusyafaAnasrullah/musyafaanasrullah" target="_blank" rel="noopener noreferrer" class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+                <button type="button" class="proj-link demo-trigger" data-proj="p2"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Finance Tracker -->
+          <div class="project-card glass-panel" data-category="web dashboard api">
+            <div class="project-thumb">
+              <div class="thumb-placeholder thumb-gradient-3">
+                <i class="fa-solid fa-chart-line project-placeholder-icon"></i>
+                <span class="project-year">2025</span>
+              </div>
+              <div class="project-badge status-progress">In Progress</div>
+            </div>
+            <div class="project-body">
+              <span class="project-cat">Web Development • Dashboard • API</span>
+              <h3>Finance Tracker</h3>
+              <p data-i18n="p3_desc">Aplikasi pelacak keuangan personal dengan grafik analitik real-time, kategorisasi pengeluaran otomatis, laporan bulanan PDF, dan sinkronisasi multi-akun.</p>
+              <div class="project-tech">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>PostgreSQL</span>
+                <span>Chart.js</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/MusyafaAnasrullah/musyafaanasrullah" target="_blank" rel="noopener noreferrer" class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+                <button type="button" class="proj-link demo-trigger" data-proj="p3"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Admin Dashboard -->
+          <div class="project-card glass-panel" data-category="web dashboard">
+            <div class="project-thumb">
+              <div class="thumb-placeholder thumb-gradient-4">
+                <i class="fa-solid fa-gauge-high project-placeholder-icon"></i>
+                <span class="project-year">2025</span>
+              </div>
+              <div class="project-badge status-progress">In Progress</div>
+            </div>
+            <div class="project-body">
+              <span class="project-cat">Web Development • Dashboard</span>
+              <h3>Admin Dashboard</h3>
+              <p data-i18n="p4_desc">Panel administrasi serba guna dengan manajemen pengguna berbasis role, analytics real-time, audit log aktivitas, dan notifikasi sistem terintegrasi.</p>
+              <div class="project-tech">
+                <span>Vue.js</span>
+                <span>Laravel</span>
+                <span>MySQL</span>
+                <span>Tailwind</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/MusyafaAnasrullah/musyafaanasrullah" target="_blank" rel="noopener noreferrer" class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+                <button type="button" class="proj-link demo-trigger" data-proj="p4"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Inventory Management System -->
+          <div class="project-card glass-panel" data-category="web dashboard api">
+            <div class="project-thumb">
+              <div class="thumb-placeholder thumb-gradient-5">
+                <i class="fa-solid fa-boxes-stacked project-placeholder-icon"></i>
+                <span class="project-year">2025</span>
+              </div>
+              <div class="project-badge status-progress">In Progress</div>
+            </div>
+            <div class="project-body">
+              <span class="project-cat">Web Development • Dashboard • API</span>
+              <h3>Inventory Management System</h3>
+              <p data-i18n="p5_desc">Sistem manajemen inventaris perusahaan dengan pelacakan stok real-time, peringatan reorder otomatis, laporan pergerakan barang, dan integrasi barcode scanner.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Express.js</span>
+                <span>PostgreSQL</span>
+                <span>Docker</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/MusyafaAnasrullah/musyafaanasrullah" target="_blank" rel="noopener noreferrer" class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+                <button type="button" class="proj-link demo-trigger" data-proj="p5"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Point of Sale (POS) System -->
+          <div class="project-card glass-panel" data-category="web dashboard api">
+            <div class="project-thumb">
+              <div class="thumb-placeholder thumb-gradient-6">
+                <i class="fa-solid fa-cash-register project-placeholder-icon"></i>
+                <span class="project-year">2026</span>
+              </div>
+              <div class="project-badge status-progress">In Progress</div>
+            </div>
+            <div class="project-body">
+              <span class="project-cat">Web Development • Dashboard • API</span>
+              <h3>Point of Sale (POS) System</h3>
+              <p data-i18n="p6_desc">Sistem kasir modern berbasis web dengan pemrosesan transaksi cepat, manajemen produk &amp; diskon, laporan penjualan harian, serta integrasi printer struk thermal.</p>
+              <div class="project-tech">
+                <span>Next.js</span>
+                <span>Node.js</span>
+                <span>MySQL</span>
+                <span>Redis</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/MusyafaAnasrullah/musyafaanasrullah" target="_blank" rel="noopener noreferrer" class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+                <button type="button" class="proj-link demo-trigger" data-proj="p6"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" data-i18n="exp_subtitle">PENGALAMAN KERJA & ORGANISASI</span>
+          <h2 class="section-title" data-i18n="exp_title">Experience & Leadership</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="exp-grid">
+          <!-- Work Experience -->
+          <div class="exp-column glass-panel">
+            <div class="exp-column-header">
+              <i class="fa-solid fa-briefcase exp-icon"></i>
+              <h3 data-i18n="exp_work_title">Work Experience</h3>
+            </div>
+
+            <div class="exp-timeline">
+              <!-- Item 1 -->
+              <div class="exp-item">
+                <div class="exp-time">2023 - 2024 (2 Tahun)</div>
+                <h4>Pengajar Bahasa Arab & Inggris</h4>
+                <div class="exp-company"><i class="fa-solid fa-building-columns"></i> Pondok An-Nibras Subang, Jawa Barat</div>
+                <p data-i18n="exp_job1_desc">Mengabdi selama 2 tahun sebagai tenaga pengajar utama bagian bahasa (Bahasa Arab dan Bahasa Inggris), membina kedisiplinan santri, dan mengkoordinasikan kegiatan kebahasaan harian.</p>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="exp-item">
+                <div class="exp-time">2023 - Sekarang (2 Tahun)</div>
+                <h4>Freelance Web Developer</h4>
+                <div class="exp-company"><i class="fa-solid fa-globe"></i> Upwork & Fiverr Platform</div>
+                <p data-i18n="exp_job2_desc">Bekerja secara independen menyelesaikan berbagai proyek aplikasi web, integrasi REST API, pembenahan bug, dan desain UI/UX untuk klien internasional dan lokal.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Organization Experience -->
+          <div class="exp-column glass-panel">
+            <div class="exp-column-header">
+              <i class="fa-solid fa-users-gear exp-icon"></i>
+              <h3 data-i18n="exp_org_title">Organization Experience</h3>
+            </div>
+
+            <div class="exp-timeline">
+              <!-- Item 0: JMH Community Leader -->
+              <div class="exp-item">
+                <div class="exp-time">2020 – 2022 (2 Tahun)</div>
+                <h4>Ketua Jami'atul-Huffadz (JMH) Komunitas</h4>
+                <div class="exp-company"><i class="fa-solid fa-book-quran"></i> Pondok Modern Darussalam Gontor</div>
+                <p data-i18n="exp_org_jmh_desc">Memimpin komunitas Jamiatul Huffadz, mengoordinasikan anggota, menyusun program kegiatan (pembinaan tahfidz, kajian rutin), serta mengambil keputusan dan membagi tugas ke pengurus lain.</p>
+              </div>
+
+              <!-- Item 1: DBBG Trainer -->
+              <div class="exp-item">
+                <div class="exp-time">2020 – 2022 (2 Tahun)</div>
+                <h4>Pelatih 01 – Darussalam Body Building Gymnasium (DBBG)</h4>
+                <div class="exp-company"><i class="fa-solid fa-dumbbell"></i> Pondok Modern Darussalam Gontor</div>
+                <p data-i18n="exp_org_dbbg_desc">Bertanggung jawab sebagai pelatih kebugaran dalam menyusun, membimbing, dan mengevaluasi program latihan fisik santri, sekaligus memotivasi peserta untuk mencapai perkembangan fisik yang optimal.</p>
+              </div>
+
+              <!-- Item 2: Electrical & Diesel Mechanical Secretary -->
+              <div class="exp-item">
+                <div class="exp-time">2022 – 2023 (1 Tahun)</div>
+                <h4>Sekretaris Bagian Kelistrikan dan Pemesinan (Diesel)</h4>
+                <div class="exp-company"><i class="fa-solid fa-bolt"></i> Pondok Modern Darussalam Gontor Kampus 5 Banyuwangi & Kampus 7 Lampung</div>
+                <p data-i18n="exp_org_diesel_desc">Mengelola administrasi, pencatatan pemeliharaan sistem mekanikal-elektrikal, serta operasional mesin genset diesel untuk mendukung keandalan pasokan energi di lingkungan pesantren.</p>
+              </div>
+
+              <!-- Item 3: Taekwondo UKM Secretary -->
+              <div class="exp-item">
+                <div class="exp-time">2025 – Sekarang (1 Tahun)</div>
+                <h4>Sekretaris Unit Kegiatan Mahasiswa (UKM) Taekwondo</h4>
+                <div class="exp-company"><i class="fa-solid fa-hand-fist"></i> Universitas Bina Sarana Informatika (Margonda Depok)</div>
+                <p data-i18n="exp_org1_desc">Bertanggung jawab penuh atas administrasi organisasi, penyusunan proposal kejuaraan, pendataan atlet, serta pengorganisasian jadwal latihan rutin unit kegiatan mahasiswa.</p>
+              </div>
+
+              <!-- Item 4: CodeWithMusyafa Community -->
+              <div class="exp-item">
+                <div class="exp-time">2025 – Sekarang</div>
+                <h4>Founder & Lead Mentor</h4>
+                <div class="exp-company"><i class="fa-brands fa-discord"></i> CodeWithMusyafa Community</div>
+                <p data-i18n="exp_org2_desc">Memimpin komunitas pemuda dalam bidang pemrograman, membagikan modul belajar software engineering gratis, dan mengadakan sesi tanya jawab teknis berkala.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIGHTER SECTION (MARTIAL ARTS PERSONAL) -->
+    <section id="fighter" class="section fighter-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" data-i18n="fighter_subtitle">JIWA PETARUNG & BELA DIRI</span>
+          <h2 class="section-title" data-i18n="fighter_title">Fighter Persona & Martial Arts</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Fighter Top Summary Grid -->
+        <div class="fighter-top-grid">
+          <!-- Background Martial Arts -->
+          <div class="fighter-card glass-panel">
+            <div class="f-icon"><i class="fa-solid fa-hand-fist"></i></div>
+            <h3 data-i18n="f_bg_title">Jejak Bela Diri</h3>
+            <ul class="f-list">
+              <li>
+                <strong>Karate (6 Tahun)</strong>
+                <span>SDIT Amalia Cibinong (Kelas 1 SD – 6 SD)</span>
+              </li>
+              <li>
+                <strong>Muay Thai (3 Tahun)</strong>
+                <span>Pondok Modern Darussalam Gontor (Kelas 4 – 6 KMI)</span>
+              </li>
+              <li>
+                <strong>Taekwondo</strong>
+                <span>Universitas Bina Sarana Informatika (UBSI Depok)</span>
+              </li>
+            </ul>
+            <div class="belt-badge">
+              <i class="fa-solid fa-award"></i> Belt Status: <span class="badge-accent">Coming Soon</span>
+            </div>
+          </div>
+
+          <!-- Training Schedule -->
+          <div class="fighter-card glass-panel">
+            <div class="f-icon"><i class="fa-solid fa-clock"></i></div>
+            <h3 data-i18n="f_sched_title">Training Discipline</h3>
+            <p class="sched-subtitle" data-i18n="f_sched_sub">Disiplin latihan harian tanpa kompromi:</p>
+            <div class="sched-box">
+              <div class="sched-item">
+                <i class="fa-solid fa-sun text-amber"></i>
+                <div>
+                  <strong>Sesi Pagi (Morning Session)</strong>
+                  <span>Jam 05.00 – 06.00 Pagi Setiap Hari</span>
+                </div>
+              </div>
+              <div class="sched-item">
+                <i class="fa-solid fa-cloud-moon text-blue"></i>
+                <div>
+                  <strong>Sesi Sore (Evening Session)</strong>
+                  <span>Jam 04.00 – 06.00 Sore Setiap Hari</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Competition & Medals -->
+          <div class="fighter-card glass-panel">
+            <div class="f-icon"><i class="fa-solid fa-trophy"></i></div>
+            <h3 data-i18n="f_comp_title">Competitions & Medals</h3>
+            <div class="comp-box">
+              <div class="comp-name">
+                <i class="fa-solid fa-medal text-silver"></i>
+                <span>Pancasila Cup 2</span>
+              </div>
+              <div class="medal-pill">
+                🥈 Perak 1 (Silver Medal)
+              </div>
+            </div>
+
+            <!-- Motto Box -->
+            <div class="motto-box">
+              <div class="motto-text">"Fear is a friend."</div>
+              <div class="motto-sub" data-i18n="motto_sub">Rasa takut adalah teman. Rasa takut mengajarkan kita untuk waspada, bersiap, dan bertarung dengan fokus tertinggi.</div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS & CERTIFICATES SECTION -->
+    <section id="achievements" class="section achievements-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" data-i18n="ach_subtitle">PRESTASI & SERTIFIKASI</span>
+          <h2 class="section-title" data-i18n="ach_title">Certificates & Awards</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="ach-tabs">
+          <button class="ach-tab-btn active" data-tab="all" data-i18n="tab_all_items">Semua Kategori</button>
+          <button class="ach-tab-btn" data-tab="cert" data-i18n="tab_cert_btn">Sertifikat (26)</button>
+          <button class="ach-tab-btn" data-tab="piagam" data-i18n="tab_piagam_btn">Piagam (6)</button>
+          <button class="ach-tab-btn" data-tab="medal" data-i18n="tab_medals_btn">Medali (1)</button>
+        </div>
+
+        <div class="ach-grid">
+          <!-- Item 1: Sertifikat -->
+          <div class="ach-card glass-panel ach-cat-card" data-cat="cert">
+            <div class="ach-thumb ach-bg-1">
+              <i class="fa-solid fa-certificate"></i>
+              <span class="ach-badge-pill"><i class="fa-solid fa-file-pdf"></i> <span data-i18n="ach_cert_count">26 Sertifikat</span></span>
+            </div>
+            <div class="ach-body">
+              <span class="ach-type" data-i18n="tab_cert">Sertifikat</span>
+              <h4 data-i18n="ach_cert_title">Sertifikat</h4>
+              <p data-i18n="ach_cert_desc">Bukti kompetensi dan keahlian yang telah diraih</p>
+              <div class="ach-card-footer">
+                <span class="ach-open-btn"><i class="fa-solid fa-folder-open"></i> <span data-i18n="ach_open_docs">Buka Dokumen (26)</span></span>
+                <i class="fa-solid fa-chevron-right ach-arrow"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Piagam -->
+          <div class="ach-card glass-panel ach-cat-card" data-cat="piagam">
+            <div class="ach-thumb ach-bg-2">
+              <i class="fa-solid fa-award"></i>
+              <span class="ach-badge-pill"><i class="fa-solid fa-file-pdf"></i> <span data-i18n="ach_piagam_count">6 Piagam</span></span>
+            </div>
+            <div class="ach-body">
+              <span class="ach-type" data-i18n="tab_piagam">Piagam</span>
+              <h4 data-i18n="ach_piagam_title">Piagam</h4>
+              <p data-i18n="ach_piagam_desc">Penghargaan atas pencapaian dan kontribusi</p>
+              <div class="ach-card-footer">
+                <span class="ach-open-btn"><i class="fa-solid fa-folder-open"></i> <span data-i18n="ach_open_docs">Buka Dokumen (6)</span></span>
+                <i class="fa-solid fa-chevron-right ach-arrow"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Medali -->
+          <div class="ach-card glass-panel ach-cat-card" data-cat="medal">
+            <div class="ach-thumb ach-bg-3">
+              <i class="fa-solid fa-medal"></i>
+              <span class="ach-badge-pill"><i class="fa-solid fa-file-pdf"></i> <span data-i18n="ach_medal_count">1 Medali</span></span>
+            </div>
+            <div class="ach-body">
+              <span class="ach-type" data-i18n="tab_medals">Medali</span>
+              <h4 data-i18n="ach_medal_title">Medali</h4>
+              <p data-i18n="ach_medal_desc">Pencapaian terbaik dalam berbagai kompetisi</p>
+              <div class="ach-card-footer">
+                <span class="ach-open-btn"><i class="fa-solid fa-folder-open"></i> <span data-i18n="ach_open_docs">Buka Dokumen (1)</span></span>
+                <i class="fa-solid fa-chevron-right ach-arrow"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="section faq-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" data-i18n="faq_subtitle">PERTANYAAN UMUM</span>
+          <h2 class="section-title" data-i18n="faq_title">Frequently Asked Questions</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="faq-accordion">
+          <!-- FAQ 1 -->
+          <div class="faq-item glass-panel">
+            <button class="faq-question">
+              <span data-i18n="faq1_q">1. Siapa Saya?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq1_a">Saya adalah Musyafa Anasrullah, seorang mahasiswa Software Engineering, fighter, dan content creator yang memiliki passion dalam bidang teknologi, pengembangan diri, dan berbagi ilmu melalui konten yang bermanfaat.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item glass-panel">
+            <button class="faq-question">
+              <span data-i18n="faq2_q">2. Apa fokus yang sedang Saya pelajari?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq2_a">Saat ini saya berfokus mempelajari pengembangan web modern, mulai dari frontend, backend, database, hingga berbagai teknologi pendukung seperti Git, Docker, dan cloud computing.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item glass-panel">
+            <button class="faq-question">
+              <span data-i18n="faq3_q">3. Teknologi apa saja yang Saya kuasai?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq3_a">Saya menggunakan berbagai teknologi seperti HTML, CSS, JavaScript, Tailwind CSS, PHP, Laravel, Node.js, Express.js, MySQL, Git, GitHub, serta terus mempelajari teknologi baru sesuai perkembangan industri.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item glass-panel">
+            <button class="faq-question">
+              <span data-i18n="faq4_q">4. Apakah Saya menerima proyek freelance atau kolaborasi?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq4_a">Ya. Saya terbuka untuk proyek freelance, kolaborasi, magang, maupun kesempatan bekerja di bidang Software Engineering dan pengembangan aplikasi web.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item glass-panel">
+            <button class="faq-question">
+              <span data-i18n="faq5_q">5. Mengapa Saya berlatih bela diri?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq5_a">Bela diri mengajarkan saya arti disiplin, konsistensi, tanggung jawab, rasa hormat, dan ketahanan mental. Nilai-nilai tersebut saya terapkan dalam dunia teknologi maupun kehidupan sehari-hari.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item glass-panel">
+            <button class="faq-question">
+              <span data-i18n="faq6_q">6. Mengapa Saya menjadi Content Creator?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq6_a">Saya percaya bahwa ilmu akan lebih bermanfaat ketika dibagikan. Melalui konten, saya ingin mendokumentasikan proses belajar, berbagi pengalaman, serta menginspirasi orang lain untuk terus berkembang.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="faq-item glass-panel">
+            <button class="faq-question">
+              <span data-i18n="faq7_q">7. Apa tujuan karier Saya?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq7_a">Tujuan saya adalah menjadi seorang Software Engineer profesional yang mampu menciptakan solusi digital yang bermanfaat, terus mengembangkan diri, serta memberikan dampak positif melalui teknologi, seni bela diri, dan konten edukatif.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="faq-item glass-panel">
+            <button class="faq-question">
+              <span data-i18n="faq8_q">8. Bagaimana cara menghubungi Saya?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq8_a">Anda dapat menghubungi saya melalui email, LinkedIn, GitHub, atau media sosial yang tersedia pada halaman Contact. Saya akan berusaha memberikan respons secepat mungkin.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY SECTION -->
+    <section id="community" class="section community-section">
+      <div class="container">
+        <div class="community-banner glass-panel">
+          <div class="community-content">
+            <div class="discord-badge"><i class="fa-brands fa-discord"></i> Official Community</div>
+            <h2>CodeWithMusyafa Community</h2>
+            <p data-i18n="comm_desc">
+              CodeWithMusyafa Community adalah komunitas yang saya bangun untuk membantu siapa saja yang ingin belajar dunia pemrograman dan teknologi. Melalui diskusi, berbagi materi, serta kolaborasi dalam berbagai proyek, saya berharap komunitas ini dapat menjadi tempat berkembang bagi programmer masa depan.
+            </p>
+            <a href="https://discord.gg/V795mwTgNj" target="_blank" rel="noopener noreferrer" class="btn btn-discord">
+              <i class="fa-brands fa-discord"></i> Join Discord Server
+            </a>
+          </div>
+          <div class="community-graphic">
+            <div class="discord-circle">
+              <i class="fa-brands fa-discord"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" data-i18n="contact_subtitle">HUBUNGI SAYA</span>
+          <h2 class="section-title" data-i18n="contact_title">Get In Touch</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Info Cards -->
+          <div class="contact-info glass-panel">
+            <h3 data-i18n="contact_info_title">Contact Information</h3>
+            <p data-i18n="contact_info_desc">Mari berdiskusi mengenai proyek web, kolaborasi, atau sekadar bertukar ide seputar teknologi dan seni bela diri.</p>
+
+            <div class="info-list">
+              <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:musyafaanasrullah4@gmail.com">musyafaanasrullah4@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <div>
+                  <strong>WhatsApp Business</strong>
+                  <a href="https://wa.me/628139707965" target="_blank" rel="noopener noreferrer">+62 813-9707-965</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fa-brands fa-github"></i>
+                <div>
+                  <strong>GitHub</strong>
+                  <a href="https://github.com/MusyafaAnasrullah/musyafaanasrullah" target="_blank" rel="noopener noreferrer">MusyafaAnasrullah</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fa-brands fa-linkedin"></i>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <a href="https://www.linkedin.com/in/musyafa-anasrullah-674368309/" target="_blank" rel="noopener noreferrer">Musyafa Anasrullah</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Contact Form -->
+          <div class="contact-form-box glass-panel">
+            <h3 data-i18n="contact_form_title">Send Me a Message</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name" data-i18n="lbl_name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama Anda..." required />
+              </div>
+
+              <div class="form-group">
+                <label for="email" data-i18n="lbl_email">Email</label>
+                <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject" data-i18n="lbl_subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subjek pesan..." required />
+              </div>
+
+              <div class="form-group">
+                <label for="message" data-i18n="lbl_message">Pesan (Message)</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <i class="fa-solid fa-paper-plane"></i> <span data-i18n="btn_send">Kirim Pesan</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col footer-brand-col">
+        <h3 class="footer-logo">MY PORTFOLIO</h3>
+        <p class="footer-role">Software Engineer | Fighter | Content Creator</p>
+        <p class="footer-tagline">Building Technology. Building Character. Inspiring People.</p>
+        <div class="footer-collab-badge">
+          🚀 Open to Internship & Collaboration
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#fighter">Fighter</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Web Development</a></li>
+          <li><a href="#services">Frontend Dev</a></li>
+          <li><a href="#services">Backend Dev</a></li>
+          <li><a href="#services">REST API</a></li>
+          <li><a href="#services">UI Development</a></li>
+          <li><a href="#services">Database Design</a></li>
+          <li><a href="#services">Deployment</a></li>
+          <li><a href="#services">Maintenance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Tech Stack</h4>
+        <ul>
+          <li><span>HTML5</span></li>
+          <li><span>CSS3</span></li>
+          <li><span>JavaScript</span></li>
+          <li><span>Tailwind CSS</span></li>
+          <li><span>React</span></li>
+          <li><span>PHP</span></li>
+          <li><span>Laravel</span></li>
+          <li><span>MySQL</span></li>
+          <li><span>Git & GitHub</span></li>
+          <li><span>Docker</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://github.com/MusyafaAnasrullah/musyafaanasrullah" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/musyafa-anasrullah-674368309/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/musyafaanasrullahh/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@musyafaanasrullah" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
+          <li><a href="https://www.youtube.com/@musyafaanasrullah00" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+          <li><a href="mailto:musyafaanasrullah4@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></li>
+          <li><a href="https://wa.me/628139707965" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+      <p class="footer-quote">"Building reliable, scalable, and meaningful digital solutions."</p>
+      <p>© 2026 Musyafa Anasrullah. All Rights Reserved. │ Designed & Developed by Musyafa Anasrullah.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Gallery & Certificates -->
+  <div id="lightbox-modal" class="lightbox-modal">
+    <div class="lightbox-content">
+      <button id="lightbox-close" class="lightbox-close">&times;</button>
+      <div id="lightbox-graphic" class="lightbox-graphic"></div>
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- Project Detail Modal -->
+  <div id="project-modal" class="project-modal" aria-hidden="true" role="dialog" aria-labelledby="p-modal-title">
+    <div class="p-modal-content glass-panel">
+      <div class="p-modal-header">
+        <div class="p-modal-header-text">
+          <h2 id="p-modal-title"></h2>
+          <p id="p-modal-cat" class="p-modal-cat"></p>
+        </div>
+        <button id="p-modal-close" class="p-modal-close" type="button" aria-label="Tutup Detail Proyek"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div id="p-modal-body" class="p-modal-body"></div>
+      <div class="p-modal-footer">
+        <a id="p-modal-github" href="https://github.com/MusyafaAnasrullah/musyafaanasrullah" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-github"></i> <span>Repository</span></a>
+        <a id="p-modal-live" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> <span>Live Demo</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Senior Software Engineering Standard Document Showcase Modal -->
+  <div id="doc-showcase-modal" class="doc-showcase-modal" aria-hidden="true" role="dialog" aria-labelledby="doc-modal-title">
+    <div class="doc-modal-content glass-panel">
+      <div class="doc-modal-header">
+        <div class="doc-modal-title-box">
+          <div class="doc-modal-icon" id="doc-modal-icon-container">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <div>
+            <h3 id="doc-modal-title">Dokumen Sertifikat</h3>
+            <p id="doc-modal-subtitle" class="doc-modal-subtitle">Bukti kompetensi dan keahlian teknis</p>
+          </div>
+        </div>
+        <button id="doc-modal-close" class="doc-modal-close" type="button" aria-label="Tutup Modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="doc-modal-body" id="doc-modal-body">
+        <!-- Dynamic list injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Senior Software Engineering Standard Inline PDF Viewer Modal -->
+  <div id="pdf-viewer-modal" class="pdf-viewer-modal" aria-hidden="true" role="dialog" aria-labelledby="pdf-viewer-title">
+    <div class="pdf-viewer-content glass-panel">
+      <div class="pdf-viewer-header">
+        <div class="pdf-viewer-info">
+          <i class="fa-solid fa-file-pdf pdf-red-icon"></i>
+          <span id="pdf-viewer-title">Preview Dokumen PDF</span>
+        </div>
+        <div class="pdf-viewer-actions">
+          <button id="pdf-viewer-back" type="button" class="btn btn-sm btn-outline" title="Kembali ke Daftar Dokumen"><i class="fa-solid fa-arrow-left"></i> <span>Kembali</span></button>
+          <a id="pdf-viewer-download" href="javascript:void(0)" class="btn btn-sm btn-primary" title="Download ke Perangkat"><i class="fa-solid fa-download"></i> <span>Download</span></a>
+          <a id="pdf-viewer-external" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary" title="Buka di Tab Baru"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span>Tab Baru</span></a>
+          <button id="pdf-viewer-close" class="pdf-viewer-close" type="button" aria-label="Tutup PDF"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+      <div class="pdf-viewer-body" id="pdf-viewer-container">
+        <!-- Dynamic object/embed/iframe PDF viewer injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Scroll Progress & Back-to-Top Indicator -->
+  <div id="scroll-progress-widget" class="scroll-progress-widget" role="button" tabindex="0" aria-label="Kembali ke atas" title="Kembali ke atas">
+    <svg class="progress-ring" width="56" height="56" viewBox="0 0 56 56">
+      <circle class="progress-ring-bg" cx="28" cy="28" r="23" />
+      <circle class="progress-ring-circle" id="progress-ring-circle" cx="28" cy="28" r="23" />
+    </svg>
+    <div class="progress-inner">
+      <i class="fa-solid fa-chevron-up scroll-arrow-icon"></i>
+      <span class="scroll-pct-text" id="scroll-pct-text">0%</span>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
