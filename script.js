@@ -3074,7 +3074,7 @@ document.addEventListener('DOMContentLoaded', () => {
     p2: {
       title: "Portfolio Software Engineering",
       cat: "Web Development • Dashboard",
-      status: "In Progress",
+      status: "Live",
       year: "2026",
       tech: ["React", "Node.js", "MongoDB", "Framer Motion"],
       liveUrl: "https://musyafaanasrullah.github.io/portofoliomusyafaanasrullahsoftwareenginering/",

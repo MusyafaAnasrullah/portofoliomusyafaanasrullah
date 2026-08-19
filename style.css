@@ -738,6 +738,12 @@ span.ripple {
   display: inline-block;
 }
 
+[data-theme="light"] .highlight-name {
+  background: linear-gradient(135deg, #0f172a 0%, var(--accent-blue) 55%, var(--accent-cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .hero-typing-box {
   font-family: var(--font-mono);
   font-size: 1.25rem;
@@ -3082,6 +3088,10 @@ a.timeline-address:hover .address-ext-icon {
     margin-right: auto;
   }
 
+  .hero-typing-box {
+    justify-content: center;
+  }
+
   .hero-cta-group {
     justify-content: center;
   }
@@ -3233,6 +3243,11 @@ a.timeline-address:hover .address-ext-icon {
 
   .hero-sub-slogan {
     font-size: 0.85rem;
+  }
+
+  .hero-typing-box {
+    font-size: 1.05rem;
+    justify-content: center;
   }
 
   .hero-cta-group {
