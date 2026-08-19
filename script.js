@@ -2255,20 +2255,21 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* --- 2. DARK / LIGHT THEME TOGGLE --- */
-  const themeToggleBtn = document.getElementById('theme-toggle');
+  const themeToggleBtns = document.querySelectorAll('.theme-toggle, #theme-toggle');
   const htmlTag = document.documentElement;
 
   const savedTheme = localStorage.getItem('musyafa_theme') || 'dark';
   htmlTag.setAttribute('data-theme', savedTheme);
 
-  if (themeToggleBtn) {
-    themeToggleBtn.addEventListener('click', () => {
-      const currentTheme = htmlTag.getAttribute('data-theme');
+  themeToggleBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const currentTheme = htmlTag.getAttribute('data-theme') || 'dark';
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
       htmlTag.setAttribute('data-theme', newTheme);
       localStorage.setItem('musyafa_theme', newTheme);
     });
-  }
+  });
 
   /* --- 3. HERO TYPING ANIMATION ENGINE --- */
   const typingTextEl = document.getElementById('typing-text');
@@ -2410,32 +2411,59 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* --- 6. QUICK STATS COUNTER ANIMATION --- */
   const statNumbers = document.querySelectorAll('.stat-number');
-  let animatedStats = false;
+  const statCards = document.querySelectorAll('.stat-card');
 
-  const observer = new IntersectionObserver((entries) => {
+  function animateStatCounter(stat) {
+    if (stat.dataset.counted === 'true') return;
+    stat.dataset.counted = 'true';
+
+    const target = parseInt(stat.getAttribute('data-target'), 10) || 0;
+    const duration = 1600;
+    const startTime = performance.now();
+
+    function updateCount(currentTime) {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const easeOut = 1 - Math.pow(1 - progress, 3);
+      const current = Math.floor(easeOut * target);
+
+      stat.innerHTML = `${current}<span>+</span>`;
+
+      if (progress < 1) {
+        requestAnimationFrame(updateCount);
+      } else {
+        stat.innerHTML = `${target}<span>+</span>`;
+      }
+    }
+
+    requestAnimationFrame(updateCount);
+  }
+
+  const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting && !animatedStats) {
-        animatedStats = true;
-        statNumbers.forEach(stat => {
-          const target = parseInt(stat.getAttribute('data-target'));
-          let count = 0;
-          const step = Math.max(1, Math.floor(target / 40));
-          const interval = setInterval(() => {
-            count += step;
-            if (count >= target) {
-              stat.innerHTML = `${target}<span>+</span>`;
-              clearInterval(interval);
-            } else {
-              stat.innerHTML = `${count}<span>+</span>`;
-            }
-          }, 30);
-        });
+      if (entry.isIntersecting) {
+        const num = entry.target.querySelector('.stat-number') || entry.target;
+        if (num && num.classList.contains('stat-number')) {
+          animateStatCounter(num);
+        } else {
+          statNumbers.forEach(s => animateStatCounter(s));
+        }
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.15 });
 
   const statsGrid = document.querySelector('.stats-grid');
-  if (statsGrid) observer.observe(statsGrid);
+  if (statsGrid) statsObserver.observe(statsGrid);
+  statCards.forEach(card => statsObserver.observe(card));
+
+  setTimeout(() => {
+    statNumbers.forEach(stat => {
+      const rect = stat.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        animateStatCounter(stat);
+      }
+    });
+  }, 250);
 
   /* --- 7. PROJECT CATEGORY FILTERING --- */
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -3201,9 +3229,6 @@ document.addEventListener('DOMContentLoaded', () => {
     progressCircle.style.strokeDasharray = `${circumference} ${circumference}`;
     progressCircle.style.strokeDashoffset = `${circumference}`;
   }
-  function handleScrollProgree() {
-    const Scroll top
-  }
   function handleScrollProgress() {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -3422,24 +3447,5 @@ document.addEventListener('DOMContentLoaded', () => {
     card.appendChild(shine);
   });
 
-  /* --- I. STATS COUNT-UP ANIMATION --- */
-  const statNums = document.querySelectorAll('.stat-number');
-  const countObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting || entry.target.dataset.counted) return;
-      entry.target.dataset.counted = '1';
-      const target = parseInt(entry.target.textContent.replace(/\D/g, ''), 10) || 0;
-      const suffix = entry.target.textContent.replace(/[0-9]/g, '').trim();
-      let current = 0;
-      const step  = Math.max(1, Math.ceil(target / 60));
-      const timer = setInterval(() => {
-        current = Math.min(current + step, target);
-        entry.target.textContent = current + suffix;
-        if (current >= target) clearInterval(timer);
-      }, 25);
-    });
-  }, { threshold: 0.5 });
-
-  statNums.forEach(n => countObserver.observe(n));
-
 });
+
