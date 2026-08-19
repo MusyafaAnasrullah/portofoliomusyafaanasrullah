@@ -3024,6 +3024,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const pModalLive = document.getElementById('p-modal-live');
   const pModalGithub = document.getElementById('p-modal-github');
 
+
   const sampleProjects = {
     p1: {
       title: "Personal Portfolio",
@@ -3200,7 +3201,9 @@ document.addEventListener('DOMContentLoaded', () => {
     progressCircle.style.strokeDasharray = `${circumference} ${circumference}`;
     progressCircle.style.strokeDashoffset = `${circumference}`;
   }
-
+  function handleScrollProgree() {
+    const Scroll top
+  }
   function handleScrollProgress() {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
