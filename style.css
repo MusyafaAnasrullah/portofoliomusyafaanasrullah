@@ -1507,9 +1507,6 @@ a.timeline-address:hover .address-ext-icon {
 .thumb-gradient-1 { background: linear-gradient(135deg, #1e3a8a, #3b82f6); }
 .thumb-gradient-2 { background: linear-gradient(135deg, #0f766e, #14b8a6); }
 .thumb-gradient-3 { background: linear-gradient(135deg, #701a75, #d946ef); }
-.thumb-gradient-4 { background: linear-gradient(135deg, #831843, #f43f5e); }
-.thumb-gradient-5 { background: linear-gradient(135deg, #14532d, #22c55e); }
-.thumb-gradient-6 { background: linear-gradient(135deg, #1e1b4b, #6366f1); }
 
 .project-placeholder-icon {
   font-size: 3.5rem;

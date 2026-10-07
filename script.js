@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       p1_desc: "Situs portofolio personal profesional dengan mode gelap/terang, animasi partikel interaktif, multi-bahasa (i18n), dan desain responsif premium.",
       p2_desc: "Platform showcase proyek rekayasa perangkat lunak lengkap dengan galeri interaktif, filter kategori dinamis, dan tampilan detail proyek berbasis modal.",
-      p3_desc: "Aplikasi pelacak keuangan personal dengan grafik analitik real-time, kategorisasi pengeluaran otomatis, laporan bulanan PDF, dan sinkronisasi multi-akun.",
+      p3_desc: "Platform website kelas online interaktif dengan manajemen materi kursus, video pembelajaran digital, kuis evaluasi, dan tracking progres belajar siswa.",
       p4_desc: "Panel administrasi serba guna dengan manajemen pengguna berbasis role, analytics real-time, audit log aktivitas, dan notifikasi sistem terintegrasi.",
       p5_desc: "Sistem manajemen inventaris perusahaan dengan pelacakan stok real-time, peringatan reorder otomatis, laporan pergerakan barang, dan integrasi barcode scanner.",
       p6_desc: "Sistem kasir modern berbasis web dengan pemrosesan transaksi cepat, manajemen produk & diskon, laporan penjualan harian, serta integrasi printer struk thermal.",
@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       p1_desc: "Professional personal portfolio website with dark/light mode, interactive particle animation, multi-language (i18n) support, and premium responsive design.",
       p2_desc: "Comprehensive software engineering project showcase platform with interactive gallery, dynamic category filters, and modal-based project detail views.",
-      p3_desc: "Personal finance tracker with real-time analytics charts, automatic expense categorization, monthly PDF reports, and multi-account synchronization.",
+      p3_desc: "Interactive online course website platform with structured course modules, digital learning videos, evaluation quizzes, and student progress tracking.",
       p4_desc: "All-in-one admin panel with role-based user management, real-time analytics, activity audit logs, and integrated system notifications.",
       p5_desc: "Enterprise inventory management system with real-time stock tracking, automatic reorder alerts, goods movement reports, and barcode scanner integration.",
       p6_desc: "Modern web-based point of sale system with fast transaction processing, product & discount management, daily sales reports, and thermal receipt printer integration.",
@@ -3089,71 +3089,20 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     p3: {
-      title: "Finance Tracker",
-      cat: "Web Development • Dashboard • API",
-      status: "In Progress",
-      year: "2025",
-      tech: ["Next.js", "TypeScript", "PostgreSQL", "Chart.js"],
-      liveUrl: "https://github.com/MusyafaAnasrullah/musyafaanasrullah",
-      repoUrl: "https://github.com/MusyafaAnasrullah/musyafaanasrullah",
-      body: "Aplikasi pelacak keuangan personal yang canggih dengan grafik analitik real-time menggunakan Chart.js, kategorisasi pengeluaran otomatis berbasis AI, laporan bulanan dalam format PDF, dan sinkronisasi lintas perangkat menggunakan akun yang aman.",
-      features: [
-        "Grafik analitik keuangan real-time (Chart.js)",
-        "Kategorisasi pengeluaran otomatis",
-        "Ekspor laporan bulanan ke PDF",
-        "Sinkronisasi multi-akun & multi-perangkat",
-        "Dashboard ringkasan anggaran & tabungan"
-      ]
-    },
-    p4: {
-      title: "Admin Dashboard",
-      cat: "Web Development • Dashboard",
-      status: "In Progress",
-      year: "2025",
-      tech: ["Vue.js", "Laravel", "MySQL", "Tailwind CSS"],
-      liveUrl: "https://github.com/MusyafaAnasrullah/musyafaanasrullah",
-      repoUrl: "https://github.com/MusyafaAnasrullah/musyafaanasrullah",
-      body: "Panel administrasi serbaguna berbasis Vue.js dan Laravel dengan sistem manajemen pengguna berbasis role (RBAC), analytics real-time, pencatatan audit log aktivitas pengguna, dan sistem notifikasi terintegrasi. Cocok untuk pengelolaan platform skala menengah hingga enterprise.",
-      features: [
-        "Role-Based Access Control (RBAC)",
-        "Analytics & statistik real-time",
-        "Audit log aktivitas pengguna",
-        "Notifikasi sistem terintegrasi",
-        "Manajemen konten & pengaturan platform"
-      ]
-    },
-    p5: {
-      title: "Inventory Management System",
-      cat: "Web Development • Dashboard • API",
-      status: "In Progress",
-      year: "2025",
-      tech: ["React", "Express.js", "PostgreSQL", "Docker"],
-      liveUrl: "https://github.com/MusyafaAnasrullah/musyafaanasrullah",
-      repoUrl: "https://github.com/MusyafaAnasrullah/musyafaanasrullah",
-      body: "Sistem manajemen inventaris tingkat enterprise untuk pelacakan stok produk secara real-time, notifikasi reorder otomatis saat stok menipis, laporan lengkap pergerakan barang masuk/keluar, dan integrasi barcode scanner untuk input data yang cepat dan akurat.",
-      features: [
-        "Pelacakan stok real-time per produk & kategori",
-        "Notifikasi reorder otomatis",
-        "Laporan pergerakan barang (masuk/keluar)",
-        "Integrasi barcode & QR code scanner",
-        "Deployment via Docker container"
-      ]
-    },
-    p6: {
-      title: "Point of Sale (POS) System",
-      cat: "Web Development • Dashboard • API",
+      title: "Website Kelas Online",
+      cat: "Web Development • Education",
       status: "In Progress",
       year: "2026",
-      tech: ["Next.js", "Node.js", "MySQL", "Redis"],
+      tech: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
       liveUrl: "https://github.com/MusyafaAnasrullah/musyafaanasrullah",
       repoUrl: "https://github.com/MusyafaAnasrullah/musyafaanasrullah",
-      body: "Sistem kasir modern berbasis web yang dirancang untuk bisnis ritel. Mendukung pemrosesan transaksi yang cepat dan akurat, manajemen produk lengkap dengan sistem diskon fleksibel, laporan penjualan harian & bulanan, serta integrasi printer struk thermal melalui protokol ESC/POS.",
+      body: "Platform website kelas online modern yang dirancang untuk mendukung kegiatan pembelajaran digital interaktif. Dilengkapi manajemen materi belajar terstruktur, modul video materi kursus, kuis evaluasi otomatis, serta pemantauan progres belajar siswa secara komprehensif.",
       features: [
-        "Transaksi kasir cepat & akurat",
-        "Manajemen produk, kategori & diskon",
-        "Laporan penjualan harian & bulanan",
-        "Integrasi printer struk thermal (ESC/POS)",
-        "Sesi caching Redis untuk performa tinggi"
+        "Sistem manajemen kelas & kurikulum terstruktur",
+        "Modul video pembelajaran digital interaktif",
+        "Kuis interaktif & penilaian otomatis",
+        "Pelacakan progres belajar siswa real-time",
+        "Penerbitan sertifikat kelulusan digital"
       ]
     }
   };
